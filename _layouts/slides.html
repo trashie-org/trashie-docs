@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "de" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title | escape }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/theme/{{ page.theme | default: 'white' }}.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        {%- comment -%} Each `---` in the markdown body becomes <hr /> and starts a new slide. {%- endcomment -%}
+        {%- assign slides = content | split: "<hr />" -%}
+        {%- for slide in slides %}
+        <section>{{ slide }}</section>
+        {%- endfor %}
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/notes.js"></script>
+    <script>
+      Reveal.initialize({ hash: true, slideNumber: true, plugins: [RevealNotes] });
+    </script>
+  </body>
+</html>

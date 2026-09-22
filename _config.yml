@@ -50,3 +50,8 @@ plugins:
 
 exclude:
   - README.md
+defaults:
+  - scope:
+      path: "slides"
+    values:
+      layout: slides
