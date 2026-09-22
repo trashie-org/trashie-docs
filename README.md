@@ -2,6 +2,7 @@
 
 - Documentation about trashie.
 - Link to docs: https://trashie-org.github.io/trashie-docs/
+- Link to slides: https://trashie-org.github.io/trashie-docs/slides/example.html
 
 ## Start local
 Requires Ruby >= 3.2.0
