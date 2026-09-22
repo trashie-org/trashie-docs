@@ -1,3 +1,9 @@
+---
+layout: page
+title: Management
+permalink: /management/
+---
+
 ## 1. Planung
 
 ### Meilensteine
@@ -79,3 +85,6 @@
 - höherer Trainingsaufwand, benötigt eigene gelabelte Datensätze
 - Genauigkeit anfangs voraussichtlich geringer als bei großen kommerziellen Cloud-Modellen (siehe Risiken)
 - Rechenleistung für das Training des Modells nötig
+
+---
+[← Übersicht]({{ '/' | relative_url }}) · [Projektantrag]({{ '/project-proposal/' | relative_url }})

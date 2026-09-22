@@ -1,4 +1,8 @@
-# Projektantrag Trashie (KI-gestützte Mülltrennungs-App)
+---
+layout: page
+title: Projektantrag Trashie (KI-gestützte Mülltrennungs-App)
+permalink: /project-proposal/
+---
 Kerimcan Yagci, Nico Haider, Milan Nuzdic, Jan Brunner und Mario Solomun
 
 *Schulprojekt im Rahmen des SYP-Unterrichts*
@@ -69,3 +73,6 @@ Da sich lokale Vorschriften ändern können, muss die Datenbank periodisch über
 
 ---
 *last change: 22.09.2026*
+
+---
+[← Übersicht]({{ '/' | relative_url }}) · [Management]({{ '/management/' | relative_url }})
