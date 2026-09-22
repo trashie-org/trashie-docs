@@ -4,20 +4,36 @@ title: Trashie
 
 # Trashie
 
-Beispiel-Präsentation
+KI unterstützer **Mülltrennungsassistent**.
 
 ---
 
-## Agenda
+# Ausgangssituation
 
-- Problem
-- Lösung
-- Nächste Schritte
-
-<aside class="notes">Sprechernotizen: Taste S öffnet die Speaker-Ansicht.</aside>
+- Viele Menschen wissen nicht, wie die Mülltrennung funktioniert.
+- Die Mülltrennung ist von Ort zu Ort unterschiedlich.
+- Müll ist vermischt (vorallen in Städten).
 
 ---
 
-## Neue Folie
+# Nutzen
 
-Folien werden mit `---` getrennt (Leerzeile davor und danach).
+- Die App soll den Menschen helfen den Müll richtig zu trennen.
+- Zudem soll somit auch die Effizients der Recyclinganlagen verbessert werden.
+- Wichtige Wertstoffe bleiben erhalten.
+
+---
+
+# Features
+
+- Foto-Analyse mittels KI.
+- Standorterkennung via. GPS.
+- Zuordnung zur richtigen Tonne/Recyclingstation
+- Hinweis auf Recyclingstationen
+- Manuelle Korrektur/Auswahl
+
+---
+
+# Risiken
+
+- KI Modell könnte Bilder falsch erkennen oder zuordnen.
