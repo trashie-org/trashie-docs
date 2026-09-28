@@ -32,7 +32,7 @@ install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
+gem "wdm", "~> 0.2", :install_if => Gem.win_platform?
 
 # Adding webrick for Ruby 3+ users on mac
 gem 'webrick'
