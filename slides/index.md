@@ -39,7 +39,7 @@ Der KI-gestützte **Mülltrennungsassistent**
 - **KI-Foto-Analyse:** eigenes Modell, keine externen KI-Dienste
 - **Standortbezogene Regeln:** für die jeweilige Gemeinde
 - **Recyclingstationen:** Hinweis auf die passende Sammelstelle
-- **Manuelle Auswahl:** wenn die KI unsicher ist oder kein Internet besteht
+- **Zentralles Nachschlagewerk:** hier findest du jederzeit schnell, was in welche Tonne gehört, auch ohne Internetverbindung.
 
 ---
 
