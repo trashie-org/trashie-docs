@@ -4,37 +4,58 @@ title: Trashie
 
 # Trashie
 
-KI-unterstützer **Mülltrennungsassistent**.
+### Fotografieren. Erkennen. Richtig entsorgen.
+
+Der KI-gestützte **Mülltrennungsassistent**
 
 ---
 
-# Ausgangssituation
+# Das Problem
 
-- Viele Menschen wissen nicht, wie die Mülltrennung funktioniert.
-- Die Mülltrennung ist von Ort zu Ort unterschiedlich.
-- Müll ist vermischt (vor allem in Städten).
+**Wohin damit?**
+
+- Trennregeln unterscheiden sich von Gemeinde zu Gemeinde.
+- Unsicherheit führt zu Fehlwürfen.
+- Fehlwürfe erschweren das Recycling, Wertstoffe gehen verloren.
+- Es gibt kein zentrales, einfaches Nachschlagewerk.
 
 ---
 
-# Nutzen
+# Die Lösung
 
-- Die App soll den Menschen helfen, den Müll richtig zu trennen.
-- Zudem soll somit auch die Effizienz der Recyclinganlagen verbessert werden.
-- Wichtige Wertstoffe bleiben erhalten.
+**Trashie** sagt dir in Sekunden, wohin dein Müll gehört – passend zu deiner Gemeinde.
+
+1. Gegenstand fotografieren
+2. KI erkennt die Abfallart
+3. GPS ermittelt die Gemeinde
+4. Trashie zeigt die richtige Tonne
 
 ---
 
 # Features
 
-- Foto-Analyse mittels KI.
-- Standorterkennung via GPS.
-- Zuordnung zur richtigen Tonne/Recyclingstation.
-- Hinweis auf Recyclingstationen.
-- Manuelle Korrektur/Auswahl.
+*Nicht nur **was** es ist – sondern **wohin** es gehört.*
+
+- **KI-Foto-Analyse:** eigenes Modell, keine externen KI-Dienste
+- **Standortbezogene Regeln:** für die jeweilige Gemeinde
+- **Recyclingstationen:** Hinweis auf die passende Sammelstelle
+- **Manuelle Auswahl:** wenn die KI unsicher ist oder kein Internet besteht
 
 ---
 
-# Risiken
+# Der Nutzen
 
-- KI-Modell könnte Bilder falsch erkennen oder zuordnen.
-- Regeldaten könnten unvollständig oder veraltet sein.
+- **Für Nutzer:** Sicherheit in Sekunden statt langer Recherche
+- **Für die Umwelt:** weniger Fehlwürfe, Wertstoffe bleiben im Kreislauf
+- **Für das Recycling:** sauberer getrennter Müll, effizientere Anlagen
+
+---
+
+# Ausblick & Team
+
+**Start:** Linz, Oberösterreich & Mühlviertel<br>
+**Danach:** Erweiterung auf weitere Regionen
+
+Kerimcan Yagci · Nico Haider · Milan Nuzdic · Jan Brunner · Mario Solomun
+
+### Danke! Fragen?
