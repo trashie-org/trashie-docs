@@ -75,4 +75,4 @@ Da sich lokale Vorschriften ändern können, muss die Datenbank periodisch über
 *last change: 22.09.2026*
 
 ---
-[← Übersicht]({{ '/' | relative_url }}) · [Management]({{ '/management/' | relative_url }})
+[← Übersicht]({{ '/' | relative_url }}) · [Management]({{ '/management/' | relative_url }}) · [Architektur]({{ '/architecture/' | relative_url }})
