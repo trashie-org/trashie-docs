@@ -24,6 +24,7 @@ Informationen zur richtigen Trennung erhalten Bürgerinnen und Bürger derzeit v
 Die Zuordnung eines konkreten Gegenstandes erfolgt dabei durch die Person selbst, indem sie in diesen Quellen nachschlägt oder sich auf ihr bisheriges Wissen verlässt.
 
 
+
 ## 2. Problemstellung
 Die korrekte Trennung von Abfall ist für viele Menschen im Alltag schwierig, da sich die Regeln je nach Gemeinde bzw. zuständigem Entsorgungsunternehmen unterscheiden. Das führt zu mehreren Problemen wie zum Beispiel:
 - Unsicherheit, in welche Tonne oder zu welcher Recyclingstation ein Gegenstand gehört
