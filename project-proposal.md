@@ -10,6 +10,21 @@ Kerimcan Yagci, Nico Haider, Milan Nuzdic, Jan Brunner und Mario Solomun
 ## 1. Ausgangslage
 
 ### 1.1 Ist-Situation
+In Österreich ist die Abfallentsorgung auf Gemeindeebene organisiert. In Oberösterreich sind dafür die Gemeinden bzw. die jeweiligen Bezirksabfallverbände zuständig, in Linz übernimmt dies die Linz AG. Die Haushalte trennen ihren Abfall in mehrere Fraktionen, typischerweise Restmüll, Bioabfall, Altpapier, Leichtverpackungen (Gelbe Tonne bzw. Gelber Sack) sowie Altglas. Welche Fraktionen direkt beim Haushalt abgeholt und welche zu Sammelinseln gebracht werden, legt jede Gemeinde selbst fest.
+
+Gegenstände, die nicht über die Haushaltstonnen entsorgt werden dürfen, etwa Elektroaltgeräte, Batterien, Problemstoffe, Sperrmüll oder Altholz, werden in Altstoffsammelzentren (ASZ) bzw. Recyclinghöfen abgegeben. Diese befinden sich an unterschiedlichen Standorten und haben jeweils eigene Öffnungszeiten.
+
+Informationen zur richtigen Trennung erhalten Bürgerinnen und Bürger derzeit vor allem über:
+- Abfallkalender und Trennblätter bzw. Trenn-ABCs der Gemeinden oder Abfallverbände (gedruckt oder als PDF)
+- Webseiten der Gemeinden, Bezirksabfallverbände und Entsorgungsunternehmen
+- regionale Abfall-Apps, die hauptsächlich Abholtermine und Erinnerungen anbieten
+- Aufdrucke und Symbole auf Verpackungen
+- persönliche Auskunft beim Personal der Altstoffsammelzentren
+
+Die Zuordnung eines konkreten Gegenstandes erfolgt dabei durch die Person selbst, indem sie in diesen Quellen nachschlägt oder sich auf ihr bisheriges Wissen verlässt.
+
+
+## 2. Problemstellung
 Die korrekte Trennung von Abfall ist für viele Menschen im Alltag schwierig, da sich die Regeln je nach Gemeinde bzw. zuständigem Entsorgungsunternehmen unterscheiden. Das führt zu mehreren Problemen wie zum Beispiel:
 - Unsicherheit, in welche Tonne oder zu welcher Recyclingstation ein Gegenstand gehört
 - uneinheitliche Regeln zwischen einzelnen Gemeinden, z. B. innerhalb von Linz, dem restlichen Oberösterreich und dem Mühlviertel
@@ -17,15 +32,11 @@ Die korrekte Trennung von Abfall ist für viele Menschen im Alltag schwierig, da
 - fehlendes zentrales, leicht zugängliches Nachschlagewerk für Privatpersonen
 - besondere Unsicherheit bei Personen, die neu in eine Region ziehen oder diese nur vorübergehend nutzen (z. B. Studierende)
 
-### 1.2 Verbesserungsvorschläge
-Mithilfe von Trashie, einer KI-gestützten Mülltrennungs-App, kann der Nutzer ein Foto eines Abfallgegenstandes aufnehmen. Die App erkennt mittels eines eigens trainierten KI-Modells, um welche Art von Abfall es sich handelt, bestimmt über GPS den aktuellen Standort und ordnet den Gegenstand anhand der lokal gültigen Regeln der richtigen Tonne bzw. Recyclingstation zu. In der ersten Ausbaustufe liegt der Fokus auf Linz, Oberösterreich und dem Mühlviertel; eine Erweiterung auf weitere Regionen ist danach möglich.
 
-## 2. Zielsetzung
-Trashie soll nicht nur die Materialart eines Gegenstandes erkennen (z. B. "Kunststoff"), sondern eine konkrete, standortabhängige Handlungsempfehlung geben: in welche Tonne der Gegenstand in der jeweiligen Gemeinde gehört, bzw. an welche Recyclingstation er abgegeben werden muss, falls er nicht über die Haushaltstonnen entsorgt werden kann.
 
-### Features
+### 3. Nutzen
 
-#### App:
+#### 3.1 App:
 
 - **Foto-Analyse mittels KI**:
 Der Nutzer fotografiert den Abfallgegenstand, ein eigens trainiertes KI-Modell klassifiziert Material bzw. Objektart.
@@ -42,18 +53,7 @@ Falls ein Gegenstand nicht über die normale Tonne entsorgt werden kann, zeigt d
 - **Manuelle Korrektur/Auswahl**:
 Falls die KI unsicher ist oder keine Internetverbindung besteht, kann der Nutzer die Abfallart manuell auswählen.
 
-#### Regel-Datenbank:
-
-- **Recherche der lokalen Trennregeln**:
-Die Regeln für Linz, Oberösterreich und das Mühlviertel werden online über frei zugängliche Quellen (z. B. Abfallkalender, Gemeinde-Webseiten) recherchiert und in einer eigenen Datenbank gepflegt; es werden keine konkreten Entsorgungsunternehmen als Kooperationspartner genannt.
-
-- **Manuelle Pflege mit optionaler API-Anbindung**:
-Die Regeln werden primär in einer manuell gepflegten Datenbank hinterlegt. Sofern ein Entsorgungsunternehmen eine öffentliche Schnittstelle anbietet, kann diese ergänzend zur automatischen Aktualisierung genutzt werden.
-
-- **Regelmäßige Aktualisierung**:
-Da sich lokale Vorschriften ändern können, muss die Datenbank periodisch überprüft und aktualisiert werden.
-
-## 3. Chancen und Risiken
+## 4. Chancen und Risiken
 
 ### Risiken:
 - Genauigkeit der KI-Erkennung könnte anfangs nicht ausreichen, wodurch Gegenstände falsch zugeordnet werden
@@ -70,6 +70,15 @@ Da sich lokale Vorschriften ändern können, muss die Datenbank periodisch über
 - Skalierbarkeit auf weitere Regionen nach erfolgreicher Pilotphase in Linz, OÖ und Mühlviertel
 - Lerneffekt im Team im Bereich KI/Computer Vision und Cross-Platform-Entwicklung
 - kostengünstige Umsetzung durch konsequenten Einsatz kostenloser/Open-Source-Technologien
+
+
+## 5. Rahmenbedingungen 
+
+- Team aus 5 Personen.
+- Zeitaufwand: Bis März 2028
+- Frontend: C# mit MAUI
+- Backend: Sprint Boot Java
+
 
 ---
 *last change: 22.09.2026*
