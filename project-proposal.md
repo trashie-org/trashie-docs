@@ -35,9 +35,9 @@ Die korrekte Trennung von Abfall ist für viele Menschen im Alltag schwierig, da
 
 
 
-### 3. Nutzen
+## 3. Nutzen
 
-#### 3.1 App:
+### 3.1 App:
 
 - **Foto-Analyse mittels KI**:
 Der Nutzer fotografiert den Abfallgegenstand, ein eigens trainiertes KI-Modell klassifiziert Material bzw. Objektart.
@@ -51,8 +51,8 @@ Verknüpfung von KI-Erkennung, Standort und hinterlegten lokalen Regeln zu einer
 - **Hinweis auf Recyclingstationen**:
 Falls ein Gegenstand nicht über die normale Tonne entsorgt werden kann, zeigt die App die passende Sammelstelle an.
 
-- **Manuelle Korrektur/Auswahl**:
-Falls die KI unsicher ist oder keine Internetverbindung besteht, kann der Nutzer die Abfallart manuell auswählen.
+- **Zentralles Nachschlagewerk**:
+Hier findest du jederzeit schnell, was in welche Tonne gehört, auch ohne Internetverbindung.
 
 ## 4. Chancen und Risiken
 
