@@ -37,7 +37,6 @@ Die korrekte Trennung von Abfall ist für viele Menschen im Alltag schwierig, da
 
 ## 3. Nutzen
 
-### 3.1 App:
 
 - **Foto-Analyse mittels KI**:
 Der Nutzer fotografiert den Abfallgegenstand, ein eigens trainiertes KI-Modell klassifiziert Material bzw. Objektart.
@@ -80,6 +79,24 @@ Hier findest du jederzeit schnell, was in welche Tonne gehört, auch ohne Intern
 - Frontend: C# mit MAUI
 - Backend: Sprint Boot Java
 
+
+## 6. Plannung
+
+- Start des Projektes: Anfang 4 Jahrgang.
+- Ende des Projektes: März 2028.
+- Erster Prototyp: März 2027.
+
+### 6.1 Meilensteine
+
+1. Schreiben des Manifests (Mitte/Ende Oktober 2026).
+2. Sammeln der Daten für das KI-Modell (Ende November 2026).
+3. Sammeln der Abfalldaten und Gemeinderegeln (Ende November 2026).
+4. Aussuchen des basis KI-Modells (Anfang/Mitte Dezember 2026).
+5. Frontend und Backend implementierung (Anfang Jänner 2027).
+6. Erster Prototyp (Anfang März 2027).
+7. Ausweitung des Projektes in Zusammenarbeit mit den ASZs (Anfang September 2027).
+8. Fertigstellung der ASZ funktion (Ende Dezember 2027).
+9. Fertigstellung des Projektes (Mitte/Ende Februar 2028).
 
 ---
 *last change: 22.09.2026*
