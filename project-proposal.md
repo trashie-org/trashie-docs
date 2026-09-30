@@ -98,6 +98,47 @@ Hier findest du jederzeit schnell, was in welche Tonne gehört, auch ohne Intern
 8. Fertigstellung der ASZ funktion (Ende Dezember 2027).
 9. Fertigstellung des Projektes (Mitte/Ende Februar 2028).
 
+
+## Einschränkungen
+
+### Rechtliche Einschränkungen
+
+- **Datenschutz (DSGVO / DSG)**:
+Standortdaten und Fotos sind personenbezogene Daten. Fotos können Personen, Adressetiketten oder Kfz-Kennzeichen zeigen und enthalten EXIF-Metadaten mit GPS-Position. Die Nutzung erfordert eine Einwilligung, Datenminimierung (Koordinaten nur in Gemeinde umwandeln, nicht speichern) und eine Datenschutzerklärung, die auch von den App Stores verlangt wird. Die KI-Klassifikation sollte daher möglichst direkt am Gerät erfolgen.
+
+- **Urheberrecht bei Trainingsdaten**:
+Bilder aus dem Internet dürfen nicht ohne Weiteres zum Training verwendet werden. Öffentliche Datensätze (z. B. TrashNet, TACO) sind nur unter ihrer jeweiligen Lizenz nutzbar. Auf eigenen Fotos dürfen keine erkennbaren Personen abgebildet sein (Recht am eigenen Bild).
+
+- **Lizenzen von Basismodell und Bibliotheken**:
+Das gewählte Basismodell und alle Bibliotheken müssen lizenzrechtlich passen, z. B. verpflichtet die AGPL-3.0 (Ultralytics YOLO) zur Offenlegung des eigenen Codes, während Modelle unter Apache 2.0 (MobileNet, EfficientNet) unproblematischer sind.
+
+- **Übernahme von Regel- und Standortdaten**:
+Trennregeln als Fakten sind nicht geschützt, Texte, Grafiken und Icons aus Trenn-ABCs der Gemeinden bzw. der Linz AG jedoch schon. Eine systematische Übernahme ganzer Datenbanken kann das Datenbankschutzrecht verletzen. Bevorzugt werden offene Quellen wie data.gv.at oder OpenStreetMap unter Einhaltung ihrer Lizenzbedingungen (Namensnennung).
+
+- **Haftung**:
+Falsche Empfehlungen können Schäden verursachen (z. B. Brand durch Lithium-Akkus im Restmüll). Die App benötigt daher einen Hinweis, dass die Angaben ohne Gewähr sind und im Zweifel die Auskunft der Gemeinde bzw. des ASZ gilt. Die App darf nicht den Eindruck einer offiziellen App der Entsorgungsunternehmen erwecken (keine fremden Logos).
+
+- **Sonstiges**:
+Prüfung des Namens „Trashie“ auf bestehende Marken, Impressums- bzw. Offenlegungspflicht bei Veröffentlichung, Volljährigkeit als Voraussetzung für App-Store-Entwicklerkonten sowie Klärung der Rechte am Code, insbesondere bei einer Zusammenarbeit mit den ASZs.
+
+### Fachliche und technische Einschränkungen
+
+- **Sich ändernde Regeln**:
+Seit 1.1.2025 gilt in Österreich das Einwegpfand, außerdem werden Metallverpackungen gemeinsam mit Leichtverpackungen gesammelt. Solche Änderungen müssen laufend in die Regel-Datenbank übernommen werden.
+
+- **Grenzen der KI-Erkennung**:
+Ein Foto zeigt das Objekt, aber nicht immer das Material (z. B. Verbundstoffe wie Tetra Pak, Kunststoffart, Verschmutzung). Die Anzahl der erkennbaren Klassen ist begrenzt, Licht und Hintergrund beeinflussen die Genauigkeit.
+
+- **Regionale Einschränkung**:
+Die App funktioniert nur in der Pilotregion Linz, Oberösterreich und Mühlviertel. GPS ist in Gebäuden und an Gemeindegrenzen ungenau.
+
+- **Kosten trotz fehlendem Budget**:
+Für die Veröffentlichung fallen Gebühren an (Apple Developer Program 99 USD/Jahr, Google Play einmalig 25 USD). iOS-Builds erfordern einen Mac, das Backend benötigt Hosting und für das KI-Training stehen nur kostenlose GPU-Angebote mit Limits zur Verfügung.
+
+- **Organisatorisch**:
+Begrenzte Zeit im Rahmen des SYP-Unterrichts, Koordination im fünfköpfigen Team und eine nicht garantierte Zusammenarbeit mit den ASZs.
+
+
 ---
 *last change: 22.09.2026*
 
