@@ -35,8 +35,11 @@ Die korrekte Trennung von Abfall ist für viele Menschen im Alltag schwierig, da
 
 
 
-## 3. Nutzen
+## 3. Aufgabenstellung
 
+Die Aufgabe ist es, eine App zu entwickeln, die es ermöglicht, Abfall anhand eines Fotos richtig zuzuordnen.
+
+### 3.1 Features/Nutzen
 
 - **Foto-Analyse mittels KI**:
 Der Nutzer fotografiert den Abfallgegenstand, ein eigens trainiertes KI-Modell klassifiziert Material bzw. Objektart.
@@ -50,39 +53,39 @@ Verknüpfung von KI-Erkennung, Standort und hinterlegten lokalen Regeln zu einer
 - **Hinweis auf Recyclingstationen**:
 Falls ein Gegenstand nicht über die normale Tonne entsorgt werden kann, zeigt die App die passende Sammelstelle an.
 
-- **Zentralles Nachschlagewerk**:
-Hier findest du jederzeit schnell, was in welche Tonne gehört, auch ohne Internetverbindung.
+- **Zentrales Nachschlagewerk**:
+Hier findet man jederzeit schnell, was in welche Tonne gehört, auch ohne Internetverbindung.
 
 ## 4. Chancen und Risiken
 
 ### Risiken:
-- Genauigkeit der KI-Erkennung könnte anfangs nicht ausreichen, wodurch Gegenstände falsch zugeordnet werden
-- online recherchierte Standort- und Regeldaten könnten ungenau, unvollständig oder veraltet sein, da keine offizielle Kooperation mit Entsorgungsunternehmen besteht
-- begrenzte Ressourcen, da kein Budget zur Verfügung steht und nur kostenlose/Open-Source-Werkzeuge genutzt werden können
-- Zeitdruck im Rahmen des SYP-Unterrichts
-- Koordination im fünfköpfigen Team
-- unterschiedliches Verhalten der App auf verschiedenen Geräten/Betriebssystemen trotz Cross-Platform-Ansatz
-- Datenschutz bei Standort- und Fotodaten
+- Die Genauigkeit der KI-Erkennung könnte anfangs nicht ausreichen, wodurch Gegenstände falsch zugeordnet werden.
+- Online recherchierte Standort- und Regeldaten könnten ungenau, unvollständig oder veraltet sein, da keine offizielle Kooperation mit Entsorgungsunternehmen besteht.
+- Begrenzte Ressourcen, da kein Budget zur Verfügung steht und nur kostenlose/Open-Source-Werkzeuge genutzt werden können.
+- Zeitdruck im Rahmen des SYP-Unterrichts.
+- Koordination im fünfköpfigen Team.
+- Unterschiedliches Verhalten der App auf verschiedenen Geräten/Betriebssystemen trotz Cross-Platform-Ansatz.
+- Datenschutz bei Standort- und Fotodaten.
 
 ### Chancen:
-- positive Umweltwirkung durch weniger Fehlwürfe und bessere Mülltrennung
-- Sensibilisierung der Nutzer für Recycling und Nachhaltigkeit
-- Skalierbarkeit auf weitere Regionen nach erfolgreicher Pilotphase in Linz, OÖ und Mühlviertel
-- Lerneffekt im Team im Bereich KI/Computer Vision und Cross-Platform-Entwicklung
-- kostengünstige Umsetzung durch konsequenten Einsatz kostenloser/Open-Source-Technologien
+- Positive Umweltwirkung durch weniger Fehlwürfe und bessere Mülltrennung.
+- Sensibilisierung der Nutzer für Recycling und Nachhaltigkeit.
+- Skalierbarkeit auf weitere Regionen nach erfolgreicher Pilotphase in Linz, OÖ und im Mühlviertel.
+- Lerneffekt im Team im Bereich KI/Computer Vision und Cross-Platform-Entwicklung.
+- Kostengünstige Umsetzung durch konsequenten Einsatz kostenloser/Open-Source-Technologien.
 
 
 ## 5. Rahmenbedingungen 
 
 - Team aus 5 Personen.
-- Zeitaufwand: Bis März 2028
+- Zeitaufwand: bis März 2028
 - Frontend: C# mit MAUI
-- Backend: Sprint Boot Java
+- Backend: Spring Boot Java
 
 
-## 6. Plannung
+## 6. Planung
 
-- Start des Projektes: Anfang 4 Jahrgang.
+- Start des Projektes: Mitte Oktober 2026.
 - Ende des Projektes: März 2028.
 - Erster Prototyp: März 2027.
 
@@ -91,20 +94,21 @@ Hier findest du jederzeit schnell, was in welche Tonne gehört, auch ohne Intern
 1. Schreiben des Manifests (Mitte/Ende Oktober 2026).
 2. Sammeln der Daten für das KI-Modell (Ende November 2026).
 3. Sammeln der Abfalldaten und Gemeinderegeln (Ende November 2026).
-4. Aussuchen des basis KI-Modells (Anfang/Mitte Dezember 2026).
-5. Frontend und Backend implementierung (Anfang Jänner 2027).
-6. Erster Prototyp (Anfang März 2027).
-7. Ausweitung des Projektes in Zusammenarbeit mit den ASZs (Anfang September 2027).
-8. Fertigstellung der ASZ funktion (Ende Dezember 2027).
-9. Fertigstellung des Projektes (Mitte/Ende Februar 2028).
+4. Aussuchen des Basis-KI-Modells (Anfang/Mitte Dezember 2026).
+5. Frontend- und Backend-Implementierung abgeschlossen (Ende Jänner 2027).
+6. Abschluss der Tests von Backend und Frontend (Mitte Februar 2027).
+7. Erster Prototyp (Anfang März 2027).
+8. Ausweitung des Projektes in Zusammenarbeit mit den ASZs (Anfang September 2027).
+9. Fertigstellung der ASZ-Funktion (Ende Dezember 2027).
+10. Fertigstellung des Projektes (Mitte/Ende Februar 2028).
 
 
-## Einschränkungen
+## 7. Einschränkungen
 
-### Rechtliche Einschränkungen
+### 7.1 Rechtliche Einschränkungen
 
 - **Datenschutz (DSGVO / DSG)**:
-Standortdaten und Fotos sind personenbezogene Daten. Fotos können Personen, Adressetiketten oder Kfz-Kennzeichen zeigen und enthalten EXIF-Metadaten mit GPS-Position. Die Nutzung erfordert eine Einwilligung, Datenminimierung (Koordinaten nur in Gemeinde umwandeln, nicht speichern) und eine Datenschutzerklärung, die auch von den App Stores verlangt wird. Die KI-Klassifikation sollte daher möglichst direkt am Gerät erfolgen.
+Standortdaten und Fotos sind personenbezogene Daten. Fotos können Personen, Adressetiketten oder Kfz-Kennzeichen zeigen und enthalten EXIF-Metadaten mit GPS-Position. Die Nutzung erfordert eine Einwilligung, Datenminimierung (Koordinaten nur zur Ermittlung der Gemeinde verwenden, nicht speichern) und eine Datenschutzerklärung, die auch von den App Stores verlangt wird. Die KI-Klassifikation sollte daher möglichst direkt am Gerät erfolgen.
 
 - **Urheberrecht bei Trainingsdaten**:
 Bilder aus dem Internet dürfen nicht ohne Weiteres zum Training verwendet werden. Öffentliche Datensätze (z. B. TrashNet, TACO) sind nur unter ihrer jeweiligen Lizenz nutzbar. Auf eigenen Fotos dürfen keine erkennbaren Personen abgebildet sein (Recht am eigenen Bild).
@@ -121,10 +125,10 @@ Falsche Empfehlungen können Schäden verursachen (z. B. Brand durch Lithium-Akk
 - **Sonstiges**:
 Prüfung des Namens „Trashie“ auf bestehende Marken, Impressums- bzw. Offenlegungspflicht bei Veröffentlichung, Volljährigkeit als Voraussetzung für App-Store-Entwicklerkonten sowie Klärung der Rechte am Code, insbesondere bei einer Zusammenarbeit mit den ASZs.
 
-### Fachliche und technische Einschränkungen
+### 7.2 Fachliche und technische Einschränkungen
 
 - **Sich ändernde Regeln**:
-Seit 1.1.2025 gilt in Österreich das Einwegpfand, außerdem werden Metallverpackungen gemeinsam mit Leichtverpackungen gesammelt. Solche Änderungen müssen laufend in die Regel-Datenbank übernommen werden.
+Seit dem 1.1.2025 gilt in Österreich das Einwegpfand, außerdem werden Metallverpackungen gemeinsam mit Leichtverpackungen gesammelt. Solche Änderungen müssen laufend in die Regel-Datenbank übernommen werden.
 
 - **Grenzen der KI-Erkennung**:
 Ein Foto zeigt das Objekt, aber nicht immer das Material (z. B. Verbundstoffe wie Tetra Pak, Kunststoffart, Verschmutzung). Die Anzahl der erkennbaren Klassen ist begrenzt, Licht und Hintergrund beeinflussen die Genauigkeit.
@@ -132,15 +136,12 @@ Ein Foto zeigt das Objekt, aber nicht immer das Material (z. B. Verbundstoffe wi
 - **Regionale Einschränkung**:
 Die App funktioniert nur in der Pilotregion Linz, Oberösterreich und Mühlviertel. GPS ist in Gebäuden und an Gemeindegrenzen ungenau.
 
-- **Kosten trotz fehlendem Budget**:
+- **Kosten trotz fehlenden Budgets**:
 Für die Veröffentlichung fallen Gebühren an (Apple Developer Program 99 USD/Jahr, Google Play einmalig 25 USD). iOS-Builds erfordern einen Mac, das Backend benötigt Hosting und für das KI-Training stehen nur kostenlose GPU-Angebote mit Limits zur Verfügung.
-
-- **Organisatorisch**:
-Begrenzte Zeit im Rahmen des SYP-Unterrichts, Koordination im fünfköpfigen Team und eine nicht garantierte Zusammenarbeit mit den ASZs.
 
 
 ---
-*last change: 22.09.2026*
+*last change: 30.09.2026*
 
 ---
 [← Übersicht]({{ '/' | relative_url }}) · [Management]({{ '/management/' | relative_url }}) · [Architektur]({{ '/architecture/' | relative_url }})
