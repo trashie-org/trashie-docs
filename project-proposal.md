@@ -10,6 +10,22 @@ Kerimcan Yagci, Nico Haider, Milan Nuzdic, Jan Brunner und Mario Solomun
 ## 1. Ausgangslage
 
 ### 1.1 Ist-Situation
+In Österreich ist die Abfallentsorgung auf Gemeindeebene organisiert. In Oberösterreich sind dafür die Gemeinden bzw. die jeweiligen Bezirksabfallverbände zuständig, in Linz übernimmt dies die Linz AG. Die Haushalte trennen ihren Abfall in mehrere Fraktionen, typischerweise Restmüll, Bioabfall, Altpapier, Leichtverpackungen (Gelbe Tonne bzw. Gelber Sack) sowie Altglas. Welche Fraktionen direkt beim Haushalt abgeholt und welche zu Sammelinseln gebracht werden, legt jede Gemeinde selbst fest.
+
+Gegenstände, die nicht über die Haushaltstonnen entsorgt werden dürfen, etwa Elektroaltgeräte, Batterien, Problemstoffe, Sperrmüll oder Altholz, werden in Altstoffsammelzentren (ASZ) bzw. Recyclinghöfen abgegeben. Diese befinden sich an unterschiedlichen Standorten und haben jeweils eigene Öffnungszeiten.
+
+Informationen zur richtigen Trennung erhalten Bürgerinnen und Bürger derzeit vor allem über:
+- Abfallkalender und Trennblätter bzw. Trenn-ABCs der Gemeinden oder Abfallverbände (gedruckt oder als PDF)
+- Webseiten der Gemeinden, Bezirksabfallverbände und Entsorgungsunternehmen
+- regionale Abfall-Apps, die hauptsächlich Abholtermine und Erinnerungen anbieten
+- Aufdrucke und Symbole auf Verpackungen
+- persönliche Auskunft beim Personal der Altstoffsammelzentren
+
+Die Zuordnung eines konkreten Gegenstandes erfolgt dabei durch die Person selbst, indem sie in diesen Quellen nachschlägt oder sich auf ihr bisheriges Wissen verlässt.
+
+
+
+## 2. Problemstellung
 Die korrekte Trennung von Abfall ist für viele Menschen im Alltag schwierig, da sich die Regeln je nach Gemeinde bzw. zuständigem Entsorgungsunternehmen unterscheiden. Das führt zu mehreren Problemen wie zum Beispiel:
 - Unsicherheit, in welche Tonne oder zu welcher Recyclingstation ein Gegenstand gehört
 - uneinheitliche Regeln zwischen einzelnen Gemeinden, z. B. innerhalb von Linz, dem restlichen Oberösterreich und dem Mühlviertel
@@ -17,15 +33,13 @@ Die korrekte Trennung von Abfall ist für viele Menschen im Alltag schwierig, da
 - fehlendes zentrales, leicht zugängliches Nachschlagewerk für Privatpersonen
 - besondere Unsicherheit bei Personen, die neu in eine Region ziehen oder diese nur vorübergehend nutzen (z. B. Studierende)
 
-### 1.2 Verbesserungsvorschläge
-Mithilfe von Trashie, einer KI-gestützten Mülltrennungs-App, kann der Nutzer ein Foto eines Abfallgegenstandes aufnehmen. Die App erkennt mittels eines eigens trainierten KI-Modells, um welche Art von Abfall es sich handelt, bestimmt über GPS den aktuellen Standort und ordnet den Gegenstand anhand der lokal gültigen Regeln der richtigen Tonne bzw. Recyclingstation zu. In der ersten Ausbaustufe liegt der Fokus auf Linz, Oberösterreich und dem Mühlviertel; eine Erweiterung auf weitere Regionen ist danach möglich.
 
-## 2. Zielsetzung
-Trashie soll nicht nur die Materialart eines Gegenstandes erkennen (z. B. "Kunststoff"), sondern eine konkrete, standortabhängige Handlungsempfehlung geben: in welche Tonne der Gegenstand in der jeweiligen Gemeinde gehört, bzw. an welche Recyclingstation er abgegeben werden muss, falls er nicht über die Haushaltstonnen entsorgt werden kann.
 
-### Features
+## 3. Aufgabenstellung
 
-#### App:
+Die Aufgabe ist es, eine App zu entwickeln, die es ermöglicht, Abfall anhand eines Fotos richtig zuzuordnen.
+
+### 3.1 Features/Nutzen
 
 - **Foto-Analyse mittels KI**:
 Der Nutzer fotografiert den Abfallgegenstand, ein eigens trainiertes KI-Modell klassifiziert Material bzw. Objektart.
@@ -39,40 +53,95 @@ Verknüpfung von KI-Erkennung, Standort und hinterlegten lokalen Regeln zu einer
 - **Hinweis auf Recyclingstationen**:
 Falls ein Gegenstand nicht über die normale Tonne entsorgt werden kann, zeigt die App die passende Sammelstelle an.
 
-- **Manuelle Korrektur/Auswahl**:
-Falls die KI unsicher ist oder keine Internetverbindung besteht, kann der Nutzer die Abfallart manuell auswählen.
+- **Zentrales Nachschlagewerk**:
+Hier findet man jederzeit schnell, was in welche Tonne gehört, auch ohne Internetverbindung.
 
-#### Regel-Datenbank:
-
-- **Recherche der lokalen Trennregeln**:
-Die Regeln für Linz, Oberösterreich und das Mühlviertel werden online über frei zugängliche Quellen (z. B. Abfallkalender, Gemeinde-Webseiten) recherchiert und in einer eigenen Datenbank gepflegt; es werden keine konkreten Entsorgungsunternehmen als Kooperationspartner genannt.
-
-- **Manuelle Pflege mit optionaler API-Anbindung**:
-Die Regeln werden primär in einer manuell gepflegten Datenbank hinterlegt. Sofern ein Entsorgungsunternehmen eine öffentliche Schnittstelle anbietet, kann diese ergänzend zur automatischen Aktualisierung genutzt werden.
-
-- **Regelmäßige Aktualisierung**:
-Da sich lokale Vorschriften ändern können, muss die Datenbank periodisch überprüft und aktualisiert werden.
-
-## 3. Chancen und Risiken
+## 4. Chancen und Risiken
 
 ### Risiken:
-- Genauigkeit der KI-Erkennung könnte anfangs nicht ausreichen, wodurch Gegenstände falsch zugeordnet werden
-- online recherchierte Standort- und Regeldaten könnten ungenau, unvollständig oder veraltet sein, da keine offizielle Kooperation mit Entsorgungsunternehmen besteht
-- begrenzte Ressourcen, da kein Budget zur Verfügung steht und nur kostenlose/Open-Source-Werkzeuge genutzt werden können
-- Zeitdruck im Rahmen des SYP-Unterrichts
-- Koordination im fünfköpfigen Team
-- unterschiedliches Verhalten der App auf verschiedenen Geräten/Betriebssystemen trotz Cross-Platform-Ansatz
-- Datenschutz bei Standort- und Fotodaten
+- Die Genauigkeit der KI-Erkennung könnte anfangs nicht ausreichen, wodurch Gegenstände falsch zugeordnet werden.
+- Online recherchierte Standort- und Regeldaten könnten ungenau, unvollständig oder veraltet sein, da keine offizielle Kooperation mit Entsorgungsunternehmen besteht.
+- Begrenzte Ressourcen, da kein Budget zur Verfügung steht und nur kostenlose/Open-Source-Werkzeuge genutzt werden können.
+- Zeitdruck im Rahmen des SYP-Unterrichts.
+- Koordination im fünfköpfigen Team.
+- Unterschiedliches Verhalten der App auf verschiedenen Geräten/Betriebssystemen trotz Cross-Platform-Ansatz.
+- Datenschutz bei Standort- und Fotodaten.
 
 ### Chancen:
-- positive Umweltwirkung durch weniger Fehlwürfe und bessere Mülltrennung
-- Sensibilisierung der Nutzer für Recycling und Nachhaltigkeit
-- Skalierbarkeit auf weitere Regionen nach erfolgreicher Pilotphase in Linz, OÖ und Mühlviertel
-- Lerneffekt im Team im Bereich KI/Computer Vision und Cross-Platform-Entwicklung
-- kostengünstige Umsetzung durch konsequenten Einsatz kostenloser/Open-Source-Technologien
+- Positive Umweltwirkung durch weniger Fehlwürfe und bessere Mülltrennung.
+- Sensibilisierung der Nutzer für Recycling und Nachhaltigkeit.
+- Skalierbarkeit auf weitere Regionen nach erfolgreicher Pilotphase in Linz, OÖ und im Mühlviertel.
+- Lerneffekt im Team im Bereich KI/Computer Vision und Cross-Platform-Entwicklung.
+- Kostengünstige Umsetzung durch konsequenten Einsatz kostenloser/Open-Source-Technologien.
+
+
+## 5. Rahmenbedingungen 
+
+- Team aus 5 Personen.
+- Zeitaufwand: bis März 2028
+- Frontend: C# mit MAUI
+- Backend: Spring Boot Java
+
+
+## 6. Planung
+
+- Start des Projektes: Mitte Oktober 2026.
+- Ende des Projektes: März 2028.
+- Erster Prototyp: März 2027.
+
+### 6.1 Meilensteine
+
+1. Schreiben des Manifests (Mitte/Ende Oktober 2026).
+2. Sammeln der Daten für das KI-Modell (Ende November 2026).
+3. Sammeln der Abfalldaten und Gemeinderegeln (Ende November 2026).
+4. Aussuchen des Basis-KI-Modells (Anfang/Mitte Dezember 2026).
+5. Frontend- und Backend-Implementierung abgeschlossen (Ende Jänner 2027).
+6. Abschluss der Tests von Backend und Frontend (Mitte Februar 2027).
+7. Erster Prototyp (Anfang März 2027).
+8. Ausweitung des Projektes in Zusammenarbeit mit den ASZs (Anfang September 2027).
+9. Fertigstellung der ASZ-Funktion (Ende Dezember 2027).
+10. Fertigstellung des Projektes (Mitte/Ende Februar 2028).
+
+
+## 7. Einschränkungen
+
+### 7.1 Rechtliche Einschränkungen
+
+- **Datenschutz (DSGVO / DSG)**:
+Standortdaten und Fotos sind personenbezogene Daten. Fotos können Personen, Adressetiketten oder Kfz-Kennzeichen zeigen und enthalten EXIF-Metadaten mit GPS-Position. Die Nutzung erfordert eine Einwilligung, Datenminimierung (Koordinaten nur zur Ermittlung der Gemeinde verwenden, nicht speichern) und eine Datenschutzerklärung, die auch von den App Stores verlangt wird. Die KI-Klassifikation sollte daher möglichst direkt am Gerät erfolgen.
+
+- **Urheberrecht bei Trainingsdaten**:
+Bilder aus dem Internet dürfen nicht ohne Weiteres zum Training verwendet werden. Öffentliche Datensätze (z. B. TrashNet, TACO) sind nur unter ihrer jeweiligen Lizenz nutzbar. Auf eigenen Fotos dürfen keine erkennbaren Personen abgebildet sein (Recht am eigenen Bild).
+
+- **Lizenzen von Basismodell und Bibliotheken**:
+Das gewählte Basismodell und alle Bibliotheken müssen lizenzrechtlich passen, z. B. verpflichtet die AGPL-3.0 (Ultralytics YOLO) zur Offenlegung des eigenen Codes, während Modelle unter Apache 2.0 (MobileNet, EfficientNet) unproblematischer sind.
+
+- **Übernahme von Regel- und Standortdaten**:
+Trennregeln als Fakten sind nicht geschützt, Texte, Grafiken und Icons aus Trenn-ABCs der Gemeinden bzw. der Linz AG jedoch schon. Eine systematische Übernahme ganzer Datenbanken kann das Datenbankschutzrecht verletzen. Bevorzugt werden offene Quellen wie data.gv.at oder OpenStreetMap unter Einhaltung ihrer Lizenzbedingungen (Namensnennung).
+
+- **Haftung**:
+Falsche Empfehlungen können Schäden verursachen (z. B. Brand durch Lithium-Akkus im Restmüll). Die App benötigt daher einen Hinweis, dass die Angaben ohne Gewähr sind und im Zweifel die Auskunft der Gemeinde bzw. des ASZ gilt. Die App darf nicht den Eindruck einer offiziellen App der Entsorgungsunternehmen erwecken (keine fremden Logos).
+
+- **Sonstiges**:
+Prüfung des Namens „Trashie“ auf bestehende Marken, Impressums- bzw. Offenlegungspflicht bei Veröffentlichung, Volljährigkeit als Voraussetzung für App-Store-Entwicklerkonten sowie Klärung der Rechte am Code, insbesondere bei einer Zusammenarbeit mit den ASZs.
+
+### 7.2 Fachliche und technische Einschränkungen
+
+- **Sich ändernde Regeln**:
+Seit dem 1.1.2025 gilt in Österreich das Einwegpfand, außerdem werden Metallverpackungen gemeinsam mit Leichtverpackungen gesammelt. Solche Änderungen müssen laufend in die Regel-Datenbank übernommen werden.
+
+- **Grenzen der KI-Erkennung**:
+Ein Foto zeigt das Objekt, aber nicht immer das Material (z. B. Verbundstoffe wie Tetra Pak, Kunststoffart, Verschmutzung). Die Anzahl der erkennbaren Klassen ist begrenzt, Licht und Hintergrund beeinflussen die Genauigkeit.
+
+- **Regionale Einschränkung**:
+Die App funktioniert nur in der Pilotregion Linz, Oberösterreich und Mühlviertel. GPS ist in Gebäuden und an Gemeindegrenzen ungenau.
+
+- **Kosten trotz fehlenden Budgets**:
+Für die Veröffentlichung fallen Gebühren an (Apple Developer Program 99 USD/Jahr, Google Play einmalig 25 USD). iOS-Builds erfordern einen Mac, das Backend benötigt Hosting und für das KI-Training stehen nur kostenlose GPU-Angebote mit Limits zur Verfügung.
+
 
 ---
-*last change: 22.09.2026*
+*last change: 30.09.2026*
 
 ---
-[← Übersicht]({{ '/' | relative_url }}) · [Management]({{ '/management/' | relative_url }})
+[← Übersicht]({{ '/' | relative_url }}) · [Management]({{ '/management/' | relative_url }}) · [Architektur]({{ '/architecture/' | relative_url }})
