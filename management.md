@@ -46,13 +46,13 @@ Eine User Story gilt als erledigt, wenn:
 | #  | Meilenstein                         | MVP-Stufe | Ergebnis (Inkrement)                                            | Datum |
 |----|-------------------------------------|-----------|-----------------------------------------------------------------|-------|
 | M0 | Projekt-Setup                       | –         | Leeres, lauffähiges App-Gerüst, Board, CI                       | TODO  |
-| M1 | Walking Skeleton                    | MVP 1     | Manuelle Auswahl Abfallart → richtige Tonne in **Linz**         | TODO  |
-| M2 | Standortbezug                       | MVP 2     | GPS bestimmt Gemeinde, Regeln für **Linz, OÖ, Mühlviertel**, Recyclingstationen | TODO  |
-| M3 | KI-Erkennung                        | MVP 3     | Foto → **eigenes KI-Modell** erkennt Abfallart → Empfehlung     | TODO  |
+| M1 | Walking Skeleton                    | MVP 1     | Manuelle Auswahl Abfallart → richtige Tonne bzw. Container im **ASZ** | TODO  |
+| M2 | ASZ-Regeln & Backend                | MVP 2     | Backend mit Trennregeln und Abfallarten des **ASZ**, App bindet es an | TODO  |
+| M3 | KI-Erkennung                        | MVP 3     | Foto → **nachtrainiertes KI-Modell** erkennt Abfallart → Empfehlung | TODO  |
 | M4 | Release Candidate                   | MVP 4     | Getestete, stabile App mit verbesserter KI-Genauigkeit          | TODO  |
 | M5 | Abschluss                           | Release   | Finale Version, Dokumentation, Präsentation                     | TODO  |
 
-**Paralleler Strang – Trainingsdaten:** Da das eigene Modell gelabelte Bilder benötigt, startet die Datensammlung bereits ab M1 parallel zur App-Entwicklung, damit in M3 ausreichend Daten zur Verfügung stehen.
+**Paralleler Strang – Trainingsdaten:** Da das Basismodell für das ASZ nachtrainiert wird und dafür gelabelte Bilder benötigt, startet die Datensammlung bereits ab M1 parallel zur App-Entwicklung, damit in M3 ausreichend Daten zur Verfügung stehen.
 
 ---
 
@@ -77,46 +77,43 @@ Eine User Story gilt als erledigt, wenn:
 
 ### M1 – MVP 1: Walking Skeleton
 
-**Ziel:** Kleinster durchgängiger Nutzen – der Nutzer erfährt, in welche Tonne ein Gegenstand gehört, zunächst ohne KI und ohne GPS.
+**Ziel:** Kleinster durchgängiger Nutzen – der Nutzer erfährt, in welche Tonne ein Gegenstand gehört, zunächst ohne KI.
 
 **User Stories:**
 - Als Nutzer möchte ich eine Abfallart aus einer Liste auswählen, damit ich erfahre, in welche Tonne sie gehört.
 - Als Nutzer möchte ich die Empfehlung klar und verständlich angezeigt bekommen (Tonne + Farbe/Symbol).
 
 **Umfang:**
-- Regel-Datenbank (Datenmodell + Befüllung) für **Linz**
+- Regel-Datenbank (Datenmodell + Befüllung) für das **ASZ**
 - Liste der Abfallkategorien (entspricht später den Klassen des KI-Modells)
 - Screen: Kategorie wählen → Ergebnis-Screen mit Tonne
 - Start der Trainingsdatensammlung (Kategorien festlegen, Label-Konvention definieren)
 
 **Akzeptanzkriterien:**
-- [ ] Für jede definierte Kategorie wird für Linz die korrekte Tonne angezeigt
+- [ ] Für jede definierte Kategorie wird die korrekte Tonne bzw. der korrekte Container im ASZ angezeigt
 - [ ] Regeldaten sind mit Quelle (URL, Abrufdatum) hinterlegt
 - [ ] Kategorien- und Label-Liste für das KI-Modell ist fixiert
 
 ---
 
-### M2 – MVP 2: Standortbezug
+### M2 – MVP 2: ASZ-Regeln & Backend
 
-**Ziel:** Die Empfehlung ist abhängig vom tatsächlichen Standort des Nutzers.
+**Ziel:** Die Empfehlung basiert auf den tatsächlichen Regeln des ASZ und wird zentral vom Backend bereitgestellt.
 
 **User Stories:**
-- Als Nutzer möchte ich, dass die App meine Gemeinde automatisch erkennt, damit die dort geltenden Regeln verwendet werden.
-- Als Nutzer möchte ich bei Gegenständen, die nicht in eine Haushaltstonne gehören, die nächste passende Recyclingstation sehen.
-- Als Nutzer möchte ich meine Gemeinde manuell wählen können, falls GPS nicht verfügbar ist oder ich die Berechtigung verweigere.
+- Als Nutzer möchte ich sehen, welche Abfallarten das ASZ annimmt und wohin sie gehören.
+- Als Nutzer möchte ich bei Gegenständen, die nicht in eine Haushaltstonne gehören, erfahren, dass sie im ASZ abzugeben sind.
 
 **Umfang:**
-- GPS-Standorterfassung inkl. Berechtigungsabfrage
-- Zuordnung Koordinaten → Gemeinde
-- Regel-Datenbank erweitert um **Oberösterreich und Mühlviertel**
-- Recyclingstationen (Standort, angenommene Abfallarten) in der Datenbank
+- Backend (Spring Boot) mit REST-Schnittstelle für Regeln und Abfallarten
+- Regel-Datenbank erweitert um die vollständigen Regeln und Annahmebedingungen des ASZ
+- Anbindung der App an das Backend
 - Prüfung öffentlicher Schnittstellen von Entsorgungsunternehmen (optional anbinden)
 
 **Akzeptanzkriterien:**
-- [ ] Gemeinde wird in der Pilotregion korrekt erkannt
-- [ ] Unterschiedliche Regeln zwischen Gemeinden führen zu unterschiedlichen Empfehlungen
-- [ ] Recyclingstation wird angezeigt, wenn keine Haushaltstonne passt
-- [ ] App funktioniert ohne GPS-Berechtigung über manuelle Gemeindewahl
+- [ ] App lädt die Regeln über das Backend
+- [ ] Alle Abfallarten des ASZ sind mit korrekter Zuordnung hinterlegt
+- [ ] Gegenstände, die nicht in eine Haushaltstonne passen, werden als ASZ-Abgabe ausgewiesen
 
 ---
 
@@ -130,7 +127,7 @@ Eine User Story gilt als erledigt, wenn:
 
 **Umfang:**
 - Aufbereiteter, gelabelter Trainingsdatensatz (Train/Validation/Test-Split)
-- Training des **eigenen Klassifikationsmodells**
+- Nachtrainieren (Fine-Tuning) eines **bestehenden Basismodells** auf die Abfallarten des ASZ
 - Export des Modells in ein in der App nutzbares Format und Integration
 - Foto-Aufnahme in der App → Klassifikation → bestehender Empfehlungs-Flow aus M1/M2
 - Fallback: bei niedriger Konfidenz wird die manuelle Auswahl angeboten
@@ -147,11 +144,11 @@ Eine User Story gilt als erledigt, wenn:
 **Ziel:** Die App ist stabil, zuverlässig und datenschutzkonform.
 
 **Umfang:**
-- Systematische Tests aller Funktionen (KI-Erkennung, Standort, Regelzuordnung)
+- Systematische Tests aller Funktionen (KI-Erkennung, Regelzuordnung)
 - Tests auf mehreren Geräten/Betriebssystemen
 - Verbesserung der KI-Genauigkeit (mehr Daten, Fehleranalyse falsch erkannter Klassen)
 - Aktualisierung und Prüfung der Regeldaten
-- Datenschutz: Umgang mit Fotos und Standortdaten prüfen und dokumentieren
+- Datenschutz: Umgang mit Fotos prüfen und dokumentieren
 - Bugfixing
 
 **Akzeptanzkriterien:**
@@ -182,9 +179,9 @@ Eine User Story gilt als erledigt, wenn:
 |----------------------|--------------------------------------------------------|-------------|
 | App-Grundgerüst      | MAUI-Projekt, Navigation, UI-Grundlayout               | M0, M1      |
 | Regel-Datenbank      | Recherche, Datenmodell und Pflege der Trennregeln      | M1, M2      |
-| Standort             | GPS, Gemeinde-Zuordnung, Recyclingstationen            | M2          |
+| Backend              | Spring-Boot-Backend, ASZ-Regeln, REST-Schnittstelle    | M2          |
 | Trainingsdaten       | Sammeln, Labeln und Aufbereiten von Abfallbildern      | M1 – M3     |
-| KI-Modell            | Training, Evaluation und Integration des eigenen Modells | M3, M4    |
+| KI-Modell            | Fine-Tuning, Evaluation und Integration des Modells | M3, M4    |
 | Qualität             | Tests, Bugfixing, Datenschutz                          | M4          |
 | Dokumentation        | Projektdokumentation und Präsentation                  | laufend, M5 |
 
