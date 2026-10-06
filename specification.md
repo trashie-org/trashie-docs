@@ -100,9 +100,11 @@ Die App besteht aus folgenden Ansichten:
 |---------|--------|
 | **Kamera (Startansicht)** | Kamerabild mit Auslöser, Anzeige der aktuell erkannten Gemeinde, Zugang zur manuellen Auswahl |
 | **Ergebnis** | erkannte Abfallkategorie mit Sicherheit, richtige Tonne bzw. Container mit Farbe und Symbol, Möglichkeit zur Korrektur, Hinweis „ohne Gewähr“ |
-| **Manuelle Auswahl** | Liste der Abfallkategorien, wird bei unsicherer Erkennung oder zur Korrektur angezeigt |
+| **Korrigieren** | wird über „Falsch erkannt? Korrigieren“ geöffnet, zeigt die weiteren Vorschläge der KI zur Auswahl und führt bei Bedarf zur manuellen Auswahl |
+| **Manuelle Auswahl** | durchsuchbare Übersicht der Abfallkategorien, wird über „Manuell auswählen“, bei unsicherer Erkennung oder aus der Korrektur geöffnet |
 | **Nachschlagewerk** | durchsuchbare Liste aller Abfallkategorien mit ihrer Zuordnung |
-| **Sammelstelle** | Adresse und Öffnungszeiten des passenden ASZ |
+| **Eintrag** | Detailansicht nach dem Tippen auf einen Listeneintrag: Zuordnung, Hinweise zur Entsorgung, Gemeinde, für die die Regel gilt, Quelle und Zugang zur Sammelstelle |
+| **Sammelstelle** | Karte, Adresse und Öffnungszeiten des passenden ASZ |
 
 Zwischen Kamera und Nachschlagewerk wechselt der Nutzer über eine jederzeit sichtbare Navigationsleiste.
 

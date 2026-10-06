@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 530" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1130" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
 <title>Trashie GUI-Mockup</title>
-<rect width="1060" height="530" fill="#ffffff"/>
-<text x="140.0" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">1. Kamera</text>
-<g transform="translate(30,54)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
+<rect width="1060" height="1130" fill="#ffffff"/>
+<text x="140.0" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">1. Kamera</text>
+<text x="140.0" y="48" text-anchor="middle" font-size="10" fill="#5c6470">Startansicht</text>
+<g transform="translate(30,66)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
   <rect x="50" y="18" width="120" height="24" rx="12" fill="#eef1f4"/>
   <circle cx="68" cy="30" r="4" fill="#1b7f4b"/>
   <text x="80" y="34" font-size="11" fill="#1f2328">Gemeinde: Linz</text>
@@ -19,11 +20,12 @@
   <rect x="158" y="399" width="14" height="14" rx="2" fill="none" stroke="#8a8f98" stroke-width="2"/>
   <text x="165" y="428" text-anchor="middle" font-size="10" font-weight="400" fill="#8a8f98">Nachschlagen</text>
 </g>
-<text x="400.0" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">2. Ergebnis</text>
-<g transform="translate(290,54)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
+<path d="M262 286 h16 m-5 -5 l5 5 l-5 5" fill="none" stroke="#8a8f98" stroke-width="2"/>
+<text x="400.0" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">2. Ergebnis</text>
+<text x="400.0" y="48" text-anchor="middle" font-size="10" fill="#5c6470">nach dem Foto</text>
+<g transform="translate(290,66)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
   <text x="16" y="38" font-size="16" font-weight="700" fill="#1f2328">Ergebnis</text>
-  <rect x="16" y="54" width="56" height="56" rx="6" fill="#e3e6ea"/>
-  <path d="M36 70 h16 l-2 30 h-12 z" fill="#f8f9fa" stroke="#5c6470" stroke-width="1.5"/>
+  <rect x="16" y="54" width="56" height="56" rx="6" fill="#e3e6ea"/><path d="M36.0 70.0 h16.0 l-2.0 30.0 h-12.0 z" fill="#f8f9fa" stroke="#5c6470" stroke-width="1.5"/>
   <text x="84" y="76" font-size="14" font-weight="700" fill="#1f2328">Joghurtbecher</text>
   <text x="84" y="94" font-size="11" fill="#5c6470">Sicherheit: 94 %</text>
   <rect x="16" y="126" width="188" height="130" rx="10" fill="#fff4bf" stroke="#e0b800" stroke-width="2"/>
@@ -31,8 +33,7 @@
   <rect x="84" y="142" width="52" height="10" rx="3" fill="#d4ab00"/>
   <text x="110" y="224" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">Gelbe Tonne</text>
   <text x="110" y="242" text-anchor="middle" font-size="11" fill="#5c6470">Leichtverpackungen</text>
-  <rect x="16" y="274" width="188" height="36" rx="8" fill="none" stroke="#8a8f98"/>
-  <text x="110" y="296" text-anchor="middle" font-size="12" fill="#1f2328">Falsch erkannt? Korrigieren</text>
+  <rect x="16" y="274" width="188" height="36" rx="8" fill="none" stroke="#8a8f98"/><text x="110" y="296" text-anchor="middle" font-size="12" fill="#1f2328">Falsch erkannt? Korrigieren</text>
   <text x="110" y="336" text-anchor="middle" font-size="9" fill="#8a8f98">Angaben ohne Gewähr. Im Zweifel gilt die</text>
   <text x="110" y="348" text-anchor="middle" font-size="9" fill="#8a8f98">Auskunft der Gemeinde bzw. des ASZ.</text>
   <line x1="0" y1="388" x2="220" y2="388" stroke="#d5d8dd"/>
@@ -41,14 +42,86 @@
   <rect x="158" y="399" width="14" height="14" rx="2" fill="none" stroke="#8a8f98" stroke-width="2"/>
   <text x="165" y="428" text-anchor="middle" font-size="10" font-weight="400" fill="#8a8f98">Nachschlagen</text>
 </g>
-<text x="660.0" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">3. Nachschlagewerk</text>
-<g transform="translate(550,54)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
+<path d="M522 286 h16 m-5 -5 l5 5 l-5 5" fill="none" stroke="#8a8f98" stroke-width="2"/>
+<text x="660.0" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">3. Korrigieren</text>
+<text x="660.0" y="48" text-anchor="middle" font-size="10" fill="#5c6470">über „Falsch erkannt? Korrigieren“</text>
+<g transform="translate(550,66)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
+  <path d="M22 22 l-5 5 l5 5" fill="none" stroke="#1b7f4b" stroke-width="1.8"/><text x="28" y="31" font-size="11" fill="#1b7f4b">Ergebnis</text><text x="16" y="60" font-size="16" font-weight="700" fill="#1f2328">Korrigieren</text>
+  <rect x="16" y="74" width="44" height="44" rx="6" fill="#e3e6ea"/><path d="M31.714285714285715 86.57142857142857 h12.571428571428571 l-1.5714285714285714 23.57142857142857 h-9.428571428571429 z" fill="#f8f9fa" stroke="#5c6470" stroke-width="1.5"/>
+  <text x="70" y="92" font-size="11" fill="#5c6470">Erkannt als</text>
+  <text x="70" y="109" font-size="13" font-weight="700" fill="#1f2328" text-decoration="line-through">Joghurtbecher</text>
+  <text x="16" y="140" font-size="11" font-weight="700" fill="#1f2328">Weitere Vorschläge der KI</text>
+  <rect x="16" y="150" width="188" height="32" rx="8" fill="#e9f5ee" stroke="#1b7f4b"/>
+  <circle cx="28" cy="166" r="7" fill="#ffffff" stroke="#1b7f4b" stroke-width="1.5"/><circle cx="28" cy="166" r="4" fill="#1b7f4b"/>
+  <text x="44" y="170" font-size="12" fill="#1f2328">Plastikflasche</text>
+  <text x="194" y="170" text-anchor="end" font-size="10" fill="#8a8f98">3 %</text>
+  <rect x="16" y="190" width="188" height="32" rx="8" fill="none" stroke="#e3e6ea"/>
+  <circle cx="28" cy="206" r="7" fill="#ffffff" stroke="#8a8f98" stroke-width="1.5"/>
+  <text x="44" y="210" font-size="12" fill="#1f2328">Getränkekarton</text>
+  <text x="194" y="210" text-anchor="end" font-size="10" fill="#8a8f98">2 %</text>
+  <rect x="16" y="230" width="188" height="32" rx="8" fill="none" stroke="#e3e6ea"/>
+  <circle cx="28" cy="246" r="7" fill="#ffffff" stroke="#8a8f98" stroke-width="1.5"/>
+  <text x="44" y="250" font-size="12" fill="#1f2328">Konservendose</text>
+  <text x="194" y="250" text-anchor="end" font-size="10" fill="#8a8f98">1 %</text>
+  <text x="16" y="290" font-size="11" font-weight="700" fill="#1f2328">Nicht dabei?</text>
+  <rect x="16" y="300" width="188" height="36" rx="8" fill="none" stroke="#8a8f98"/><text x="110" y="322" text-anchor="middle" font-size="12" fill="#1f2328">Alle Abfallarten anzeigen</text>
+  <rect x="16" y="344" width="188" height="36" rx="8" fill="#1b7f4b"/><text x="110" y="366" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Übernehmen</text>
+  <line x1="0" y1="388" x2="220" y2="388" stroke="#d5d8dd"/>
+  <circle cx="55" cy="406" r="7" fill="none" stroke="#1b7f4b" stroke-width="2"/>
+  <text x="55" y="428" text-anchor="middle" font-size="10" font-weight="700" fill="#1b7f4b">Kamera</text>
+  <rect x="158" y="399" width="14" height="14" rx="2" fill="none" stroke="#8a8f98" stroke-width="2"/>
+  <text x="165" y="428" text-anchor="middle" font-size="10" font-weight="400" fill="#8a8f98">Nachschlagen</text>
+</g>
+<text x="920.0" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">4. Manuelle Auswahl</text>
+<text x="920.0" y="48" text-anchor="middle" font-size="10" fill="#5c6470">über „Manuell auswählen“</text>
+<g transform="translate(810,66)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
+  <path d="M22 22 l-5 5 l5 5" fill="none" stroke="#1b7f4b" stroke-width="1.8"/><text x="28" y="31" font-size="11" fill="#1b7f4b">Kamera</text><text x="16" y="60" font-size="16" font-weight="700" fill="#1f2328">Abfallart wählen</text>
+  <rect x="16" y="72" width="188" height="26" rx="6" fill="#fff4e0" stroke="#e8a33d"/>
+  <text x="26" y="89" font-size="10" fill="#1f2328">Nicht sicher erkannt. Bitte wählen.</text>
+  
+  <rect x="16" y="108" width="188" height="34" rx="17" fill="#eef1f4"/>
+  <circle cx="34" cy="124" r="5" fill="none" stroke="#5c6470" stroke-width="1.5"/>
+  <line x1="38" y1="128" x2="42" y2="132" stroke="#5c6470" stroke-width="1.5"/>
+  <text x="50" y="129" font-size="12" fill="#8a8f98">Abfallart suchen …</text>
+  <rect x="16" y="152" width="90" height="50" rx="8" fill="#ffffff" stroke="#e3e6ea" stroke-width="1.5"/>
+  <circle cx="30" cy="168" r="6" fill="#d64541"/>
+  <text x="24" y="191" font-size="10.5" font-weight="700" fill="#1f2328">Papier</text>
+  <rect x="114" y="152" width="90" height="50" rx="8" fill="#ffffff" stroke="#e3e6ea" stroke-width="1.5"/>
+  <circle cx="128" cy="168" r="6" fill="#2e9e5b"/>
+  <text x="122" y="191" font-size="10.5" font-weight="700" fill="#1f2328">Glas</text>
+  <rect x="16" y="210" width="90" height="50" rx="8" fill="#ffffff" stroke="#e3e6ea" stroke-width="1.5"/>
+  <circle cx="30" cy="226" r="6" fill="#f2c500"/>
+  <text x="24" y="249" font-size="10.5" font-weight="700" fill="#1f2328">Kunststoff</text>
+  <rect x="114" y="210" width="90" height="50" rx="8" fill="#ffffff" stroke="#e3e6ea" stroke-width="1.5"/>
+  <circle cx="128" cy="226" r="6" fill="#f2c500"/>
+  <text x="122" y="249" font-size="10.5" font-weight="700" fill="#1f2328">Metall</text>
+  <rect x="16" y="268" width="90" height="50" rx="8" fill="#ffffff" stroke="#e3e6ea" stroke-width="1.5"/>
+  <circle cx="30" cy="284" r="6" fill="#8a5a2b"/>
+  <text x="24" y="307" font-size="10.5" font-weight="700" fill="#1f2328">Bioabfall</text>
+  <rect x="114" y="268" width="90" height="50" rx="8" fill="#ffffff" stroke="#e3e6ea" stroke-width="1.5"/>
+  <circle cx="128" cy="284" r="6" fill="#3b6fd4"/>
+  <text x="122" y="307" font-size="10.5" font-weight="700" fill="#1f2328">Elektro</text>
+  <rect x="16" y="326" width="90" height="50" rx="8" fill="#ffffff" stroke="#e3e6ea" stroke-width="1.5"/>
+  <circle cx="30" cy="342" r="6" fill="#3b6fd4"/>
+  <text x="24" y="365" font-size="10.5" font-weight="700" fill="#1f2328">Batterien</text>
+  <rect x="114" y="326" width="90" height="50" rx="8" fill="#ffffff" stroke="#e3e6ea" stroke-width="1.5"/>
+  <circle cx="128" cy="342" r="6" fill="#3b6fd4"/>
+  <text x="122" y="365" font-size="10.5" font-weight="700" fill="#1f2328">Sperrmüll</text>
+  <line x1="0" y1="388" x2="220" y2="388" stroke="#d5d8dd"/>
+  <circle cx="55" cy="406" r="7" fill="none" stroke="#1b7f4b" stroke-width="2"/>
+  <text x="55" y="428" text-anchor="middle" font-size="10" font-weight="700" fill="#1b7f4b">Kamera</text>
+  <rect x="158" y="399" width="14" height="14" rx="2" fill="none" stroke="#8a8f98" stroke-width="2"/>
+  <text x="165" y="428" text-anchor="middle" font-size="10" font-weight="400" fill="#8a8f98">Nachschlagen</text>
+</g>
+<text x="140.0" y="590" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">5. Nachschlagewerk</text>
+<text x="140.0" y="608" text-anchor="middle" font-size="10" fill="#5c6470">über die Navigationsleiste</text>
+<g transform="translate(30,626)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
   <text x="16" y="38" font-size="16" font-weight="700" fill="#1f2328">Nachschlagewerk</text>
   <rect x="16" y="54" width="188" height="34" rx="17" fill="#eef1f4"/>
   <circle cx="34" cy="70" r="5" fill="none" stroke="#5c6470" stroke-width="1.5"/>
   <line x1="38" y1="74" x2="42" y2="78" stroke="#5c6470" stroke-width="1.5"/>
   <text x="50" y="75" font-size="12" fill="#8a8f98">Abfall suchen …</text>
-  <circle cx="28" cy="122" r="8" fill="#3b6fd4"/>
+  <rect x="8" y="102" width="204" height="42" rx="8" fill="#e8effc"/><circle cx="28" cy="122" r="8" fill="#3b6fd4"/>
   <text x="46" y="119" font-size="12" font-weight="700" fill="#1f2328">Batterie</text>
   <text x="46" y="134" font-size="10" fill="#5c6470">ASZ</text>
   <path d="M194 117 l5 5 l-5 5" fill="none" stroke="#8a8f98" stroke-width="1.5"/>
@@ -84,28 +157,50 @@
   <rect x="158" y="399" width="14" height="14" rx="2" fill="none" stroke="#1b7f4b" stroke-width="2"/>
   <text x="165" y="428" text-anchor="middle" font-size="10" font-weight="700" fill="#1b7f4b">Nachschlagen</text>
 </g>
-<text x="920.0" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">4. Sammelstelle</text>
-<g transform="translate(810,54)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
-  <text x="16" y="38" font-size="16" font-weight="700" fill="#1f2328">Sammelstelle</text>
-  <rect x="16" y="54" width="188" height="48" rx="8" fill="#e8effc" stroke="#3b6fd4"/>
-  <text x="28" y="74" font-size="12" font-weight="700" fill="#1f2328">Batterie</text>
-  <text x="28" y="91" font-size="10" fill="#1f2328">Abgabe im ASZ, nicht in die Tonne</text>
-  <rect x="16" y="116" width="188" height="120" rx="8" fill="#e3e6ea"/>
-  <path d="M16 170 L80 150 L130 190 L204 160 M70 116 L95 236 M150 116 L140 236" fill="none" stroke="#f8f9fa" stroke-width="5"/>
-  <path d="M110 186 c-14 -18 -14 -34 0 -34 c14 0 14 16 0 34 z" fill="#3b6fd4"/>
-  <circle cx="110" cy="165" r="4" fill="#f8f9fa"/>
-  <text x="16" y="260" font-size="13" font-weight="700" fill="#1f2328">ASZ Musterstadt</text>
-  <text x="16" y="278" font-size="11" fill="#5c6470">Musterstraße 1, 4020 Linz</text>
-  <text x="16" y="304" font-size="11" font-weight="700" fill="#1f2328">Öffnungszeiten</text>
-  <text x="16" y="321" font-size="11" fill="#5c6470">Mo–Fr 08:00–18:00</text>
-  <text x="16" y="337" font-size="11" fill="#5c6470">Sa 08:00–12:00</text>
-  <text x="110" y="372" text-anchor="middle" font-size="9" fill="#8a8f98">Beispieldaten</text>
+<path d="M262 846 h16 m-5 -5 l5 5 l-5 5" fill="none" stroke="#8a8f98" stroke-width="2"/>
+<text x="400.0" y="590" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">6. Eintrag</text>
+<text x="400.0" y="608" text-anchor="middle" font-size="10" fill="#5c6470">Tippen auf einen Listeneintrag</text>
+<g transform="translate(290,626)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
+  <path d="M22 22 l-5 5 l5 5" fill="none" stroke="#1b7f4b" stroke-width="1.8"/><text x="28" y="31" font-size="11" fill="#1b7f4b">Nachschlagewerk</text><text x="16" y="60" font-size="16" font-weight="700" fill="#1f2328">Batterie</text>
+  <rect x="16" y="76" width="188" height="72" rx="10" fill="#e8effc" stroke="#3b6fd4" stroke-width="2"/>
+  <circle cx="44" cy="112" r="14" fill="#3b6fd4"/>
+  <text x="68" y="108" font-size="14" font-weight="700" fill="#1f2328">Abgabe im ASZ</text>
+  <text x="68" y="125" font-size="10.5" fill="#5c6470">Problemstoffe</text>
+  <text x="16" y="174" font-size="11" font-weight="700" fill="#1f2328">Hinweise</text>
+  <circle cx="20" cy="190" r="2" fill="#5c6470"/><text x="28" y="194" font-size="10.5" fill="#5c6470">Nicht in den Restmüll werfen</text>
+  <circle cx="20" cy="208" r="2" fill="#5c6470"/><text x="28" y="212" font-size="10.5" fill="#5c6470">Pole bei Lithium-Akkus abkleben</text>
+  <text x="16" y="242" font-size="11" font-weight="700" fill="#1f2328">Gilt für</text>
+  <rect x="16" y="250" width="92" height="22" rx="11" fill="#eef1f4"/>
+  <circle cx="30" cy="261" r="4" fill="#1b7f4b"/><text x="40" y="265" font-size="10" fill="#1f2328">Gemeinde: Linz</text>
+  <rect x="16" y="292" width="188" height="36" rx="8" fill="#1b7f4b"/><text x="110" y="314" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Sammelstelle anzeigen</text>
+  <text x="110" y="350" text-anchor="middle" font-size="9" fill="#8a8f98">Quelle: Beispieldaten, Stand 10/2026</text>
+  <text x="110" y="363" text-anchor="middle" font-size="9" fill="#8a8f98">Angaben ohne Gewähr.</text>
   <line x1="0" y1="388" x2="220" y2="388" stroke="#d5d8dd"/>
   <circle cx="55" cy="406" r="7" fill="none" stroke="#8a8f98" stroke-width="2"/>
   <text x="55" y="428" text-anchor="middle" font-size="10" font-weight="400" fill="#8a8f98">Kamera</text>
   <rect x="158" y="399" width="14" height="14" rx="2" fill="none" stroke="#1b7f4b" stroke-width="2"/>
   <text x="165" y="428" text-anchor="middle" font-size="10" font-weight="700" fill="#1b7f4b">Nachschlagen</text>
 </g>
-<path d="M262 274 h16 m-5 -5 l5 5 l-5 5" fill="none" stroke="#8a8f98" stroke-width="2"/>
-<path d="M782 274 h16 m-5 -5 l5 5 l-5 5" fill="none" stroke="#8a8f98" stroke-width="2"/>
+<path d="M522 846 h16 m-5 -5 l5 5 l-5 5" fill="none" stroke="#8a8f98" stroke-width="2"/>
+<text x="660.0" y="590" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">7. Sammelstelle</text>
+<text x="660.0" y="608" text-anchor="middle" font-size="10" fill="#5c6470">über „Sammelstelle anzeigen“</text>
+<g transform="translate(550,626)"><rect x="-4" y="-4" width="228" height="448" rx="28" fill="#1f2328"/><rect width="220" height="440" rx="24" fill="#ffffff"/>
+  <path d="M22 22 l-5 5 l5 5" fill="none" stroke="#1b7f4b" stroke-width="1.8"/><text x="28" y="31" font-size="11" fill="#1b7f4b">Batterie</text><text x="16" y="60" font-size="16" font-weight="700" fill="#1f2328">Sammelstelle</text>
+  <rect x="16" y="74" width="188" height="120" rx="8" fill="#e3e6ea"/>
+  <path d="M16 128 L80 108 L130 148 L204 118 M70 74 L95 194 M150 74 L140 194" fill="none" stroke="#f8f9fa" stroke-width="5"/>
+  <path d="M110 144 c-14 -18 -14 -34 0 -34 c14 0 14 16 0 34 z" fill="#3b6fd4"/>
+  <circle cx="110" cy="123" r="4" fill="#f8f9fa"/>
+  <text x="16" y="220" font-size="13" font-weight="700" fill="#1f2328">ASZ Musterstadt</text>
+  <text x="16" y="238" font-size="11" fill="#5c6470">Musterstraße 1, 4020 Linz</text>
+  <text x="16" y="266" font-size="11" font-weight="700" fill="#1f2328">Öffnungszeiten</text>
+  <text x="16" y="283" font-size="11" fill="#5c6470">Mo–Fr 08:00–18:00</text>
+  <text x="16" y="299" font-size="11" fill="#5c6470">Sa 08:00–12:00</text>
+  <rect x="16" y="320" width="188" height="36" rx="8" fill="none" stroke="#8a8f98"/><text x="110" y="342" text-anchor="middle" font-size="12" fill="#1f2328">Route öffnen</text>
+  <text x="110" y="376" text-anchor="middle" font-size="9" fill="#8a8f98">Beispieldaten</text>
+  <line x1="0" y1="388" x2="220" y2="388" stroke="#d5d8dd"/>
+  <circle cx="55" cy="406" r="7" fill="none" stroke="#8a8f98" stroke-width="2"/>
+  <text x="55" y="428" text-anchor="middle" font-size="10" font-weight="400" fill="#8a8f98">Kamera</text>
+  <rect x="158" y="399" width="14" height="14" rx="2" fill="none" stroke="#1b7f4b" stroke-width="2"/>
+  <text x="165" y="428" text-anchor="middle" font-size="10" font-weight="700" fill="#1b7f4b">Nachschlagen</text>
+</g>
 </svg>
