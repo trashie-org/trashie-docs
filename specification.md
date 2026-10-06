@@ -3,6 +3,7 @@ layout: page
 title: Pflichtenheft
 permalink: /specification.html
 ---
+# Pflichtenheft - Trashie
 Kerimcan Yagci, Nico Haider, Milan Nuzdic, Jan Brunner und Mario Solomun
 
 ## 1. Ausgangssituation
@@ -82,9 +83,9 @@ Pilotregion ist Linz, Oberösterreich und das Mühlviertel.
 
 - **Erkennungsgenauigkeit**: Das KI-Modell erreicht auf dem Testdatensatz die im [Projektmanagement]({{ '/management/' | relative_url }}) für Meilenstein M3 festgelegte Mindestgenauigkeit. Unsichere Ergebnisse werden nicht als Empfehlung ausgegeben, sondern führen zur manuellen Auswahl.
 
-- **Offline-Fähigkeit**: Das Nachschlagewerk und die Empfehlung auf Basis der zuletzt geladenen Regeln funktionieren ohne Internetverbindung.
+- **Offline-Fähigkeit**: Das Nachschlagewerk, die manuelle Auswahl und die Empfehlung auf Basis der zuletzt geladenen Regeln funktionieren ohne Internetverbindung. Die Foto-Analyse benötigt eine Internetverbindung, weil das KI-Modell am Server liegt. Ist keine Verbindung vorhanden, bietet die App stattdessen die manuelle Auswahl an.
 
-- **Datenschutz**: Standortdaten und Fotos werden DSGVO-konform verarbeitet. Kamera und Standort werden erst nach Einwilligung des Nutzers verwendet. Koordinaten dienen ausschließlich zur Ermittlung der Gemeinde und werden nicht gespeichert. Fotos werden nach der Klassifikation nicht aufbewahrt, die Klassifikation erfolgt nach Möglichkeit direkt am Gerät. Die App enthält eine Datenschutzerklärung. Es ist kein Nutzerkonto erforderlich.
+- **Datenschutz**: Standortdaten und Fotos werden DSGVO-konform verarbeitet. Kamera und Standort werden erst nach Einwilligung des Nutzers verwendet. Koordinaten dienen ausschließlich zur Ermittlung der Gemeinde und werden nicht gespeichert. Fotos werden ausschließlich zur Klassifikation an das Backend übertragen und weder dort noch in der App aufbewahrt. Die App enthält eine Datenschutzerklärung. Es ist kein Nutzerkonto erforderlich.
 
 - **Aktualität der Regeln**: Geänderte Trennregeln können im Backend eingepflegt werden, ohne dass eine neue Version der App veröffentlicht werden muss.
 
@@ -135,7 +136,7 @@ Datenbestände:
 - **Regeldaten**: Text (Abfallkategorien, Tonnen und Container, Trennregeln mit Quelle und Abrufdatum)
 - **ASZ-Daten**: Text und Koordinaten (Standorte, Öffnungszeiten, angenommene Abfallarten)
 - **Trainingsdaten**: gelabelte Bilder, aufgeteilt in Trainings-, Validierungs- und Testdaten
-- **KI-Modell**: eine Modelldatei, die mit der App ausgeliefert wird
+- **KI-Modell**: eine Modelldatei, die am Server liegt und vom Backend verwendet wird
 
 Nutzerbezogene Daten (Fotos, Standorte, Konten) werden nicht gespeichert.
 
@@ -151,6 +152,15 @@ Nutzerbezogene Daten (Fotos, Standorte, Konten) werden nicht gespeichert.
 - **Versionsverwaltung und Backlog**: Git und GitHub, Backlog-Verwaltung über GitHub Projects
 
 Die Begründungen der Technologieentscheidungen sind in der [Architektur]({{ '/architecture/' | relative_url }}) beschrieben.
+
+#### 7.1.1 Architektur
+
+![Architekturdiagramm](assets/images/architecture.svg)
+
+- **Trashie-App**: läuft am Smartphone und greift auf Kamera und GPS zu. Das Foto wird zur Klassifikation über die REST-Schnittstelle an das Backend gesendet. Die zuletzt geladenen Regeldaten liegen im lokalen Speicher und stehen damit auch offline zur Verfügung.
+- **Backend**: nimmt das Foto entgegen, greift zur Klassifikation auf das KI-Modell zu und liefert die erkannte Abfallkategorie zurück. Außerdem stellt es Trennregeln, Abfallkategorien und ASZ-Daten aus der Regel-Datenbank bereit.
+- **KI-Modell**: liegt am Server und wird ausschließlich vom Backend angesprochen. Ein neu trainiertes Modell kann damit ohne neue App-Version eingespielt werden.
+- **Projektteam**: pflegt die Regeldaten im Backend und trainiert das KI-Modell nach.
 
 ### 7.2 Zeitliche
 

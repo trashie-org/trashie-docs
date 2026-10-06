@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 620" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Trashie Architekturdiagramm</title>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5c6470"/></marker>
+</defs>
+<rect width="1060" height="620" fill="#ffffff"/>
+
+<!-- Smartphone -->
+<rect x="20" y="60" width="450" height="400" rx="14" fill="#f8f9fa" stroke="#1f2328" stroke-width="2"/>
+<text x="36" y="84" font-size="13" font-weight="700" fill="#1f2328">Smartphone (Android / iOS)</text>
+
+<rect x="40" y="100" width="410" height="260" rx="10" fill="#ffffff" stroke="#1b7f4b" stroke-width="2"/>
+<text x="56" y="124" font-size="14" font-weight="700" fill="#1b7f4b">Trashie-App</text>
+<text x="56" y="140" font-size="10" fill="#5c6470">C#, .NET MAUI</text>
+
+<rect x="60" y="156" width="150" height="184" rx="8" fill="#eef1f4" stroke="#8a8f98"/>
+<text x="135" y="226" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2328">Benutzeroberfläche</text>
+<text x="135" y="244" text-anchor="middle" font-size="10" fill="#5c6470">Kamera, Ergebnis,</text>
+<text x="135" y="258" text-anchor="middle" font-size="10" fill="#5c6470">Nachschlagewerk,</text>
+<text x="135" y="272" text-anchor="middle" font-size="10" fill="#5c6470">Sammelstelle</text>
+
+<rect x="290" y="208" width="140" height="80" rx="8" fill="#eef1f4" stroke="#8a8f98"/>
+<text x="360" y="238" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2328">Lokaler Speicher</text>
+<text x="360" y="256" text-anchor="middle" font-size="10" fill="#5c6470">zuletzt geladene</text>
+<text x="360" y="270" text-anchor="middle" font-size="10" fill="#5c6470">Regeldaten (offline)</text>
+
+<path d="M212 248 H288" fill="none" stroke="#5c6470" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="250" y="240" text-anchor="middle" font-size="10" fill="#5c6470">Regeln</text>
+
+<rect x="60" y="390" width="150" height="50" rx="8" fill="#ffffff" stroke="#8a8f98"/>
+<text x="135" y="419" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2328">Kamera</text>
+<rect x="230" y="390" width="150" height="50" rx="8" fill="#ffffff" stroke="#8a8f98"/>
+<text x="305" y="419" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2328">GPS</text>
+<path d="M135 390 V362" fill="none" stroke="#5c6470" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="143" y="380" font-size="10" fill="#5c6470">Foto</text>
+<path d="M305 390 V362" fill="none" stroke="#5c6470" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="313" y="380" font-size="10" fill="#5c6470">Standort</text>
+
+<!-- Server -->
+<rect x="640" y="60" width="400" height="360" rx="14" fill="#f8f9fa" stroke="#1f2328" stroke-width="2"/>
+<text x="656" y="84" font-size="13" font-weight="700" fill="#1f2328">Server</text>
+
+<rect x="656" y="100" width="368" height="190" rx="10" fill="#ffffff" stroke="#3b6fd4" stroke-width="2"/>
+<text x="672" y="124" font-size="14" font-weight="700" fill="#3b6fd4">Backend</text>
+<text x="672" y="140" font-size="10" fill="#5c6470">Java, Spring Boot</text>
+
+<rect x="672" y="156" width="150" height="110" rx="8" fill="#e8effc" stroke="#3b6fd4"/>
+<text x="747" y="202" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2328">REST-Schnittstelle</text>
+<text x="747" y="220" text-anchor="middle" font-size="10" fill="#5c6470">Klassifikation,</text>
+<text x="747" y="234" text-anchor="middle" font-size="10" fill="#5c6470">Regeldaten</text>
+
+<path d="M862 168 V254 A73 12 0 0 0 1008 254 V168" fill="#e8effc" stroke="#3b6fd4"/>
+<ellipse cx="935" cy="168" rx="73" ry="12" fill="#e8effc" stroke="#3b6fd4"/>
+<text x="935" y="208" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2328">Regel-Datenbank</text>
+<text x="935" y="226" text-anchor="middle" font-size="10" fill="#5c6470">Trennregeln, Kategorien,</text>
+<text x="935" y="240" text-anchor="middle" font-size="10" fill="#5c6470">ASZ-Daten</text>
+<path d="M824 211 H860" fill="none" stroke="#5c6470" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+
+<rect x="672" y="330" width="150" height="70" rx="8" fill="#ffffff" stroke="#8a8f98"/>
+<text x="747" y="358" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2328">KI-Modell</text>
+<text x="747" y="376" text-anchor="middle" font-size="10" fill="#5c6470">nachtrainierte</text>
+<text x="747" y="389" text-anchor="middle" font-size="10" fill="#5c6470">Bildklassifikation</text>
+<path d="M747 268 V328" fill="none" stroke="#5c6470" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="755" y="314" font-size="10" fill="#5c6470">Foto / Kategorie</text>
+
+<!-- App <-> Backend -->
+<path d="M452 211 H670" fill="none" stroke="#5c6470" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="555" y="200" text-anchor="middle" font-size="11" font-weight="700" fill="#1f2328">REST</text>
+<text x="555" y="230" text-anchor="middle" font-size="10" fill="#5c6470">Foto → Kategorie</text>
+<text x="555" y="244" text-anchor="middle" font-size="10" fill="#5c6470">Regeln, Kategorien, ASZ-Daten</text>
+
+<!-- Projektteam -->
+<rect x="640" y="460" width="400" height="140" rx="14" fill="none" stroke="#8a8f98" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="656" y="484" font-size="13" font-weight="700" fill="#1f2328">Projektteam</text>
+
+<rect x="672" y="500" width="150" height="80" rx="8" fill="#ffffff" stroke="#8a8f98"/>
+<text x="747" y="528" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2328">Fine-Tuning</text>
+<text x="747" y="546" text-anchor="middle" font-size="10" fill="#5c6470">vortrainiertes Modell</text>
+<text x="747" y="560" text-anchor="middle" font-size="10" fill="#5c6470">+ Trainingsbilder</text>
+
+<rect x="862" y="500" width="146" height="80" rx="8" fill="#ffffff" stroke="#8a8f98"/>
+<text x="935" y="528" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2328">Datenpflege</text>
+<text x="935" y="546" text-anchor="middle" font-size="10" fill="#5c6470">Trennregeln, ASZ-Daten</text>
+<text x="935" y="560" text-anchor="middle" font-size="10" fill="#5c6470">mit Quelle und Datum</text>
+
+<path d="M747 500 V402" fill="none" stroke="#5c6470" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="755" y="445" font-size="10" fill="#5c6470">Modelldatei</text>
+<path d="M935 500 V268" fill="none" stroke="#5c6470" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="943" y="445" font-size="10" fill="#5c6470">pflegt Regeldaten</text>
+</svg>
