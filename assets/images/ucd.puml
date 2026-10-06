@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Nutzer" as user
+actor "Team\n(Datenpflege)" as team
+
+rectangle Trashie {
+  usecase "Abfall fotografieren" as UC1
+  usecase "Abfallart durch KI\nerkennen lassen" as UC2
+  usecase "Abfallart manuell\nauswählen" as UC3
+  usecase "Erkennung korrigieren" as UC4
+  usecase "Standort / Gemeinde\nbestimmen" as UC5
+  usecase "Entsorgungsempfehlung\nanzeigen" as UC6
+  usecase "Sammelstelle (ASZ)\nanzeigen" as UC7
+  usecase "Im Nachschlagewerk\nsuchen" as UC8
+  usecase "Trennregeln und\nASZ-Daten pflegen" as UC9
+  usecase "KI-Modell\nnachtrainieren" as UC10
+}
+
+user --> UC1
+user --> UC3
+user --> UC4
+user --> UC5
+user --> UC8
+UC1 ..> UC2 : <<include>>
+UC2 ..> UC6 : <<include>>
+UC3 ..> UC6 : <<include>>
+UC8 ..> UC6 : <<include>>
+UC5 ..> UC6 : <<include>>
+UC7 ..> UC6 : <<extend>>
+UC4 ..> UC2 : <<extend>>
+UC9 <-- team
+UC10 <-- team
+@enduml
