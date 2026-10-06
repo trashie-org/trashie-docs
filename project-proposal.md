@@ -108,7 +108,7 @@ Hier findet man jederzeit schnell, was in welche Tonne gehört, auch ohne Intern
 ### 7.1 Rechtliche Einschränkungen
 
 - **Datenschutz (DSGVO / DSG)**:
-Standortdaten und Fotos sind personenbezogene Daten. Fotos können Personen, Adressetiketten oder Kfz-Kennzeichen zeigen und enthalten EXIF-Metadaten mit GPS-Position. Die Nutzung erfordert eine Einwilligung, Datenminimierung (Koordinaten nur zur Ermittlung der Gemeinde verwenden, nicht speichern) und eine Datenschutzerklärung, die auch von den App Stores verlangt wird. Die KI-Klassifikation sollte daher möglichst direkt am Gerät erfolgen.
+Standortdaten und Fotos sind personenbezogene Daten. Fotos können Personen, Adressetiketten oder Kfz-Kennzeichen zeigen und enthalten EXIF-Metadaten mit GPS-Position. Die Nutzung erfordert eine Einwilligung, Datenminimierung (Koordinaten nur zur Ermittlung der Gemeinde verwenden, nicht speichern) und eine Datenschutzerklärung, die auch von den App Stores verlangt wird.
 
 - **Urheberrecht bei Trainingsdaten**:
 Bilder aus dem Internet dürfen nicht ohne Weiteres zum Training verwendet werden. Öffentliche Datensätze (z. B. TrashNet, TACO) sind nur unter ihrer jeweiligen Lizenz nutzbar. Auf eigenen Fotos dürfen keine erkennbaren Personen abgebildet sein (Recht am eigenen Bild).
