@@ -1,0 +1,74 @@
+name: User Story
+description: Eine User Story fuer das Trashie Product Backlog anlegen
+title: "[Story] "
+labels:
+  - user-story
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Bereich
+      description: Welcher Teil des Projekts ist hauptsaechlich betroffen?
+      options:
+        - frontend
+        - backend
+        - ki
+        - daten
+        - dokumentation
+    validations:
+      required: true
+
+  - type: dropdown
+    id: milestone
+    attributes:
+      label: Meilenstein
+      description: Zu welchem Meilenstein gehoert die Story?
+      options:
+        - M0 - Projekt-Setup
+        - M1 - Walking Skeleton
+        - M2 - ASZ-Regeln & Backend
+        - M3 - KI-Erkennung
+        - M4 - Release Candidate
+        - M5 - Abschluss
+    validations:
+      required: true
+
+  - type: textarea
+    id: story
+    attributes:
+      label: User Story
+      description: Beschreibe die Story im Format "Als ... moechte ich ..., damit ..."
+      placeholder: Als Nutzer moechte ich ..., damit ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Akzeptanzkriterien
+      description: Wann ist die Story erledigt?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: Technische Hinweise
+      description: Relevante Details zu API, UI, Datenmodell, Datenschutz oder Tests.
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      options:
+        - label: Akzeptanzkriterien sind erfuellt
+        - label: Relevante Tests wurden ergaenzt oder bewusst begruendet weggelassen
+        - label: Dokumentation wurde bei Bedarf aktualisiert
+        - label: Pull Request wurde reviewed und in main gemergt

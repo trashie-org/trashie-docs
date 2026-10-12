@@ -186,4 +186,41 @@ Eine User Story gilt als erledigt, wenn:
 | Dokumentation        | Projektdokumentation und Präsentation                  | laufend, M5 |
 
 ---
+
+## 5. Konkretisierte User Stories
+
+Die folgenden Stories bilden den initialen Product Backlog für GitHub Projects. Jede Story wird als GitHub Issue angelegt und einem Bereich (`frontend`, `backend`, `ki`, `daten`, `dokumentation`) zugeordnet.
+
+### 5.1 Frontend
+
+| ID | User Story | Akzeptanzkriterien | Meilenstein |
+|----|------------|--------------------|-------------|
+| FE-01 | Als Nutzer möchte ich eine Abfallkategorie manuell aus einer Liste auswählen, damit ich auch ohne KI eine Entsorgungsempfehlung bekomme. | Liste ist durchsuchbar; Auswahl öffnet die Ergebnisansicht; funktioniert offline mit lokal gespeicherten Regeln. | M1 |
+| FE-02 | Als Nutzer möchte ich die Entsorgungsempfehlung klar angezeigt bekommen, damit ich sofort sehe, in welche Tonne oder Sammelstelle der Gegenstand gehört. | Ergebnis zeigt Kategorie, Tonne/Container, Farbe oder Symbol, Standortbezug und Hinweis „ohne Gewähr“. | M1 |
+| FE-03 | Als Nutzer möchte ich meine Gemeinde automatisch oder manuell festlegen, damit die Empfehlung zu meinem Standort passt. | GPS-Abfrage erfolgt erst nach Zustimmung; bei Ablehnung ist manuelle Gemeindeauswahl möglich; gewählte Gemeinde wird in der App angezeigt. | M2 |
+| FE-04 | Als Nutzer möchte ich einen Gegenstand fotografieren, damit die App die Abfallart automatisch erkennt. | Kameraansicht ist Startansicht; Foto wird an das Backend gesendet; Ladezustand und Ergebnis werden verständlich angezeigt. | M3 |
+| FE-05 | Als Nutzer möchte ich ein unsicheres oder falsches KI-Ergebnis korrigieren können, damit ich trotzdem die richtige Empfehlung bekomme. | Bei niedriger Konfidenz wird manuelle Auswahl angeboten; erkannte Kategorie kann geändert werden; korrigiertes Ergebnis wird angezeigt. | M3 |
+| FE-06 | Als Nutzer möchte ich ein Nachschlagewerk durchsuchen können, damit ich auch ohne Foto schnell eine Abfallart finde. | Suche filtert während der Eingabe; Detailansicht zeigt Zuordnung, Hinweise, Quelle und gültige Gemeinde; zuletzt geladene Daten sind offline verfügbar. | M2 |
+| FE-07 | Als Nutzer möchte ich die passende Sammelstelle sehen, wenn ein Gegenstand nicht in eine Haushaltstonne gehört. | Ansicht zeigt Adresse, Öffnungszeiten und Karte oder Kartenlink; Sammelstelle passt zur gewählten Gemeinde. | M4 |
+
+### 5.2 Backend
+
+| ID | User Story | Akzeptanzkriterien | Meilenstein |
+|----|------------|--------------------|-------------|
+| BE-01 | Als App möchte ich Abfallkategorien über eine REST-Schnittstelle laden, damit Frontend und Backend dieselbe Kategorienliste verwenden. | Endpoint liefert ID, Name, Beschreibung und optionale Hinweise; Antwort ist versioniert oder enthält ein Änderungsdatum. | M2 |
+| BE-02 | Als App möchte ich Trennregeln für eine Gemeinde abrufen, damit Empfehlungen lokal passend berechnet werden können. | Endpoint liefert Kategorie, Entsorgungsweg, Tonne/Container, Farbe/Symbol, Quelle und Abrufdatum; fehlende Gemeinde wird sauber behandelt. | M2 |
+| BE-03 | Als App möchte ich ASZ- und Sammelstellen-Daten abrufen, damit nicht haushaltsübliche Gegenstände korrekt ausgewiesen werden. | Endpoint liefert Adresse, Koordinaten, Öffnungszeiten und angenommene Abfallarten; Daten sind einer Gemeinde oder Region zugeordnet. | M2 |
+| BE-04 | Als Nutzer möchte ich ein Foto klassifizieren lassen, damit ich eine automatische Abfallkategorie erhalte. | Endpoint nimmt ein Bild entgegen; Antwort enthält Kategorie, Konfidenz und alternative Vorschläge; Fotos werden nicht dauerhaft gespeichert. | M3 |
+| BE-05 | Als Projektteam möchten wir Regeldaten nachvollziehbar pflegen, damit Empfehlungen aktuell und prüfbar bleiben. | Jede Regel enthält Quelle und Abrufdatum; Änderungen können ohne neue App-Version bereitgestellt werden; Testdaten decken typische Kategorien ab. | M2 |
+| BE-06 | Als Projektteam möchten wir das KI-Modell austauschbar anbinden, damit ein neu trainiertes Modell ohne Frontend-Änderung verwendet werden kann. | Backend kapselt Modellaufruf; Modellversion wird dokumentiert; Klassennamen passen zur Kategorienliste. | M3 |
+
+### 5.3 KI und Daten
+
+| ID | User Story | Akzeptanzkriterien | Meilenstein |
+|----|------------|--------------------|-------------|
+| KI-01 | Als Projektteam möchten wir die Abfallklassen festlegen, damit Trainingsdaten, Backend und Frontend dieselben Begriffe verwenden. | Klassenliste enthält ca. 20 bis 30 Kategorien; jede Klasse hat eine kurze Beschreibung und Label-Konvention. | M1 |
+| KI-02 | Als Projektteam möchten wir gelabelte Trainingsbilder sammeln, damit das Modell auf die Trashie-Kategorien nachtrainiert werden kann. | Pro Kategorie sind Zielmenge, Quelle/Lizenz und Qualitätskriterien dokumentiert; Train/Validation/Test-Split ist festgelegt. | M1-M3 |
+| KI-03 | Als Projektteam möchten wir ein vortrainiertes Modell feinabstimmen, damit die Foto-Erkennung im Projektzeitraum realistisch umsetzbar bleibt. | Basismodell-Lizenz ist geprüft; Testgenauigkeit und Konfidenz-Schwellwert sind dokumentiert; Modellversion ist reproduzierbar. | M3 |
+
+---
 [← Übersicht]({{ '/' | relative_url }}) · [Projektantrag]({{ '/project-proposal/' | relative_url }}) · [Architektur]({{ '/architecture/' | relative_url }})
