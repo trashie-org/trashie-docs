@@ -122,6 +122,21 @@ Die Stories sind nach Epics gegliedert. Jede Story besteht aus Story, Akzeptanzk
 
 **Priority:** Niedrig
 
+
+### User Story 1.9 - Foto machen in der App
+
+**Story**: Als Nutzer möchte ich in der App ein Foto machen, um das Bild in der App zu sehen.
+
+**Akzeptanzkriterien**
+
+- [ ] Es gibt ein Fotofenster in der App.
+- [ ] Es gibt einen Foto-Button in der App.
+- [ ] Das Foto wird, nachdem auslösen angezeigt.
+
+**Effort**
+
+**Priority**: Hoch
+
 ## Epic 2: Manuelle Auswahl und Korrektur
 
 ### User Story 2.1 - Abfallart manuell auswählen
