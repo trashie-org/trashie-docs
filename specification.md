@@ -95,17 +95,26 @@ Pilotregion ist Linz, Oberösterreich und das Mühlviertel.
 
 ![GUI-Mockup](assets/images/gui.svg)
 
-Die App besteht aus folgenden Ansichten:
+Die App besteht aus folgenden Ansichten. Sie decken alle [User Stories]({{ '/user-stories/' | relative_url }}) ab:
 
-| Ansicht | Inhalt |
-|---------|--------|
-| **Kamera (Startansicht)** | Kamerabild mit Auslöser, Anzeige der aktuell erkannten Gemeinde, Zugang zur manuellen Auswahl |
-| **Ergebnis** | erkannte Abfallkategorie mit Sicherheit, richtige Tonne bzw. Container mit Farbe und Symbol, Möglichkeit zur Korrektur, Hinweis „ohne Gewähr“ |
-| **Korrigieren** | wird über „Falsch erkannt? Korrigieren“ geöffnet, zeigt die weiteren Vorschläge der KI zur Auswahl und führt bei Bedarf zur manuellen Auswahl |
-| **Manuelle Auswahl** | durchsuchbare Übersicht der Abfallkategorien, wird über „Manuell auswählen“, bei unsicherer Erkennung oder aus der Korrektur geöffnet |
-| **Nachschlagewerk** | durchsuchbare Liste aller Abfallkategorien mit ihrer Zuordnung |
-| **Eintrag** | Detailansicht nach dem Tippen auf einen Listeneintrag: Zuordnung, Hinweise zur Entsorgung, Gemeinde, für die die Regel gilt, Quelle und Zugang zur Sammelstelle |
-| **Sammelstelle** | Karte, Adresse und Öffnungszeiten des passenden ASZ |
+| Nr. | Ansicht | Inhalt |
+|-----|---------|--------|
+| 1 | **Einwilligung** | Abfrage vor dem ersten Zugriff auf Kamera bzw. Standort mit kurzer Begründung, bei Ablehnung bleibt die App nutzbar |
+| 2 | **Kamera (Startansicht)** | Kamerabild mit Auslöser, Anzeige der aktuellen Gemeinde (antippbar zum Ändern), Zugang zur manuellen Auswahl, Bild aus der Galerie wählen, Info-Symbol |
+| 3 | **Analyse** | Ladezustand zwischen Auslösen und Ergebnis |
+| 4 | **Ergebnis** | erkannte Abfallkategorie mit Sicherheit, richtige Tonne bzw. Container mit Farbe und Symbol, Gemeinde, Hinweise zur Entsorgung, Quelle, Korrektur, neues Foto, Hinweis „ohne Gewähr“ |
+| 5 | **Ergebnis (ASZ-Abgabe)** | wie Ergebnis, weist den Gegenstand als ASZ-Abgabe aus, zeigt bei Problemstoffen eine Warnung und führt zur Sammelstelle |
+| 6 | **Korrigieren** | wird über „Falsch erkannt? Korrigieren“ geöffnet, zeigt die weiteren Vorschläge der KI zur Auswahl und führt bei Bedarf zur manuellen Auswahl |
+| 7 | **Manuelle Auswahl** | durchsuchbare Übersicht der Abfallkategorien mit Beispielen, wird über „Manuell auswählen“, bei unsicherer Erkennung (mit Hinweis und Foto-Tipp) oder aus der Korrektur geöffnet |
+| 8 | **Keine Verbindung** | erscheint, wenn die Foto-Analyse ohne Internet oder wegen Zeitüberschreitung nicht möglich ist, bietet die manuelle Auswahl und einen neuen Versuch an |
+| 9 | **Gemeinde wählen** | durchsuchbare Liste der Gemeinden, Standort verwenden, Hinweis bei einem Standort außerhalb der Pilotregion |
+| 10 | **Nachschlagewerk** | durchsuchbare, alphabetische Liste aller Abfallkategorien mit ihrer Zuordnung und Beispielen, Stand der gespeicherten Daten |
+| 11 | **Kein Treffer** | Hinweis bei einer Suche ohne Ergebnis mit Verweis auf Gemeinde bzw. ASZ |
+| 12 | **Eintrag** | Detailansicht nach dem Tippen auf einen Listeneintrag: Zuordnung, Hinweise zur Entsorgung, Gemeinde, für die die Regel gilt, Quelle und Zugang zur Sammelstelle |
+| 13 | **Sammelstellen** | Liste der passenden Sammelstellen der Gemeinde mit Adresse und Angabe, ob gerade geöffnet ist |
+| 14 | **Sammelstelle** | Karte, Adresse, Öffnungszeiten und aktueller Öffnungsstatus des ASZ, Route in der Karten-App öffnen |
+| 15 | **Info** | wird über das Info-Symbol geöffnet: Gemeinde, Stand der Regeldaten, Zugang zur Datenschutzerklärung, Hinweis, dass Trashie keine offizielle App ist |
+| 16 | **Datenschutzerklärung** | Umgang mit Fotos und Standortdaten, auch offline lesbar |
 
 Zwischen Kamera und Nachschlagewerk wechselt der Nutzer über eine jederzeit sichtbare Navigationsleiste.
 
@@ -170,7 +179,7 @@ Die Begründungen der Technologieentscheidungen sind in der [Architektur]({{ '/a
 - Umsetzung im Rahmen des SYP-Unterrichts nach Scrum, die Meilensteine sind im [Projektmanagement]({{ '/management/' | relative_url }}) beschrieben
 
 ---
-*last change: 06.10.2026*
+*last change: 13.10.2026*
 
 ---
 [← Übersicht]({{ '/' | relative_url }}) · [Projektantrag]({{ '/project-proposal/' | relative_url }}) · [Management]({{ '/management/' | relative_url }}) · [Architektur]({{ '/architecture/' | relative_url }})
