@@ -9,3 +9,4 @@ layout: home
 - [Management]({{ '/management/' | relative_url }})
 - [Architektur]({{ '/architecture/' | relative_url }})
 - [Pitch]({{ '/slides/' | relative_url }})
+- [user-stories]({{'/user-stories/' | relative_url }})

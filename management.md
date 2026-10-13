@@ -171,19 +171,6 @@ Eine User Story gilt als erledigt, wenn:
 - [ ] Dokumentation vollständig und aktuell
 - [ ] Präsentation und Demo erfolgreich durchgeführt
 
----
-
-## 4. Product Backlog – Epics
-
-| Epic                 | Beschreibung                                           | Meilenstein |
-|----------------------|--------------------------------------------------------|-------------|
-| App-Grundgerüst      | MAUI-Projekt, Navigation, UI-Grundlayout               | M0, M1      |
-| Regel-Datenbank      | Recherche, Datenmodell und Pflege der Trennregeln      | M1, M2      |
-| Backend              | Spring-Boot-Backend, ASZ-Regeln, REST-Schnittstelle    | M2          |
-| Trainingsdaten       | Sammeln, Labeln und Aufbereiten von Abfallbildern      | M1 – M3     |
-| KI-Modell            | Fine-Tuning, Evaluation und Integration des Modells | M3, M4    |
-| Qualität             | Tests, Bugfixing, Datenschutz                          | M4          |
-| Dokumentation        | Projektdokumentation und Präsentation                  | laufend, M5 |
 
 ---
 [← Übersicht]({{ '/' | relative_url }}) · [Projektantrag]({{ '/project-proposal/' | relative_url }}) · [Architektur]({{ '/architecture/' | relative_url }})
